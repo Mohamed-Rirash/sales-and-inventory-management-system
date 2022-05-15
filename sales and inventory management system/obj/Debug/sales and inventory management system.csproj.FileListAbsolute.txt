@@ -1,0 +1,53 @@
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\sales and inventory management system.exe.config
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\sales and inventory management system.exe
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\sales and inventory management system.pdb
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\FontAwesome.Sharp.dll
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\Guna.UI2.dll
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.SuggestedBindingRedirects.cache
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Dashboard.resources
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Properties.Resources.resources
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.GenerateResource.cache
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.CoreCompileInputs.cache
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.CopyComplete
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.exe
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.pdb
+E:\New folder\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.AssemblyReference.cache
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\sales and inventory management system.exe.config
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\sales and inventory management system.exe
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\sales and inventory management system.pdb
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\FontAwesome.Sharp.dll
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.AssemblyReference.cache
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.SuggestedBindingRedirects.cache
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Properties.Resources.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.GenerateResource.cache
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.CoreCompileInputs.cache
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.CopyComplete
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.exe
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.pdb
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\sales and inventory management system.exe.config
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\sales and inventory management system.exe
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\sales and inventory management system.pdb
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\FontAwesome.Sharp.dll
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.AssemblyReference.cache
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.SuggestedBindingRedirects.cache
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Dashboard.resources
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Properties.Resources.resources
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.GenerateResource.cache
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.CoreCompileInputs.cache
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.CopyComplete
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.exe
+D:\apps\aa\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales and inventory management system.pdb
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Brand.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.BrandModule.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.mainform.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Category.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.CategoryModule.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\MetroFramework.Design.dll
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\MetroFramework.dll
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\MetroFramework.Fonts.dll
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Product.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.ProductModule.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Vendor.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Vendormodule.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.UserAccount.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Cashier.resources

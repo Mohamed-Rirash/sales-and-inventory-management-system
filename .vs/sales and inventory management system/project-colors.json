@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3af4ca98-2fb6-45d7-8c9f-9dca166c961f": {
+      "ProjectGuid": "3af4ca98-2fb6-45d7-8c9f-9dca166c961f",
+      "DisplayName": "sales and inventory management system",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
