@@ -62,8 +62,8 @@
             this.btn = new FontAwesome.Sharp.IconButton();
             this.btnclose = new FontAwesome.Sharp.IconButton();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.panelMain = new System.Windows.Forms.Panel();
             this.htmlToolTip1 = new MetroFramework.Drawing.Html.HtmlToolTip();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelMenu.SuspendLayout();
@@ -669,6 +669,11 @@
             this.lblTitle.Text = "TitleName";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // htmlToolTip1
+            // 
+            this.htmlToolTip1.OwnerDraw = true;
+            this.htmlToolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            // 
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -677,11 +682,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(895, 572);
             this.panelMain.TabIndex = 5;
-            // 
-            // htmlToolTip1
-            // 
-            this.htmlToolTip1.OwnerDraw = true;
-            this.htmlToolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
             // mainform
             // 
@@ -748,8 +748,8 @@
         private FontAwesome.Sharp.IconButton brnminimize;
         private FontAwesome.Sharp.IconButton btn;
         private FontAwesome.Sharp.IconButton btnclose;
-        private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Button brnbackup;
         private MetroFramework.Drawing.Html.HtmlToolTip htmlToolTip1;
+        private System.Windows.Forms.Panel panelMain;
     }
 }

@@ -51,3 +51,7 @@ E:\projects\c# projects\au\finel pos project\sales and inventory management syst
 E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Vendormodule.resources
 E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.UserAccount.resources
 E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Cashier.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\FluentValidation.dll
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\FluentValidation.xml
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.LookUpProduct.resources
+E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Qty.resources

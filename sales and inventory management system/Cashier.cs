@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,13 +13,23 @@ namespace sales_and_inventory_management_system
 {
     public partial class Cashier : Form
     {
-            
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cm = new SqlCommand();
+        DBConnect dbcon = new DBConnect();
+        SqlDataReader dr;
+
+        int qty;
+        string id;
+        string price;
+
+        string stitle = "Point Of Sales";
 
         public Cashier()
         {
             InitializeComponent();
-            
-            
+            cn = new SqlConnection(dbcon.myConnection());
+           // GetTranNo();
+            lblDate.Text = DateTime.Now.ToShortDateString();
         }
         public void slide(Button button)
         {
@@ -27,7 +38,7 @@ namespace sales_and_inventory_management_system
             panelSlide.BackColor = Color.White;
             panelSlide.Height = button.Height;
         }
-
+        #region buttons
         private void btnNTran_Click(object sender, EventArgs e)
         {
             slide(btnNTran);
@@ -36,6 +47,9 @@ namespace sales_and_inventory_management_system
         private void btnSearch_Click(object sender, EventArgs e)
         {
             slide(btnSearch);
+            LookUpProduct lookUp = new LookUpProduct(this);
+            lookUp.LoadProduct();
+            lookUp.ShowDialog();
 
         }
 
@@ -91,6 +105,54 @@ namespace sales_and_inventory_management_system
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblTimer.Text = DateTime.Now.ToString("hh:mm:ss tt");
+        }
+        #endregion
+
+        public void LoadCart()
+        {
+            try
+            {
+                Boolean hascart = false;
+                int i = 0;
+                double total = 0;
+                double discount = 0;
+                dgvCash.Rows.Clear();
+                cn.Open();
+                cm = new SqlCommand("SELECT c.id, c.pcode, p.pdesc, c.price, c.qty, c.disc, c.total FROM tbCart AS c INNER JOIN tbProduct AS p ON c.pcode=p.pcode WHERE c.transno LIKE @transno and c.status LIKE 'Pending'", cn);
+                cm.Parameters.AddWithValue("@transno", lblTranNo.Text);
+                dr = cm.ExecuteReader();
+                while (dr.Read())
+                {
+
+                    i++;
+                    total += Convert.ToDouble(dr["total"].ToString());
+                    discount += Convert.ToDouble(dr["disc"].ToString());
+                    dgvCash.Rows.Add(i, dr["id"].ToString(), dr["pcode"].ToString(), dr["pdesc"].ToString(), dr["price"].ToString(), dr["qty"].ToString(), dr["disc"].ToString(), double.Parse(dr["total"].ToString()).ToString("#,##0.00"));//
+                    hascart = true;
+                }
+                dr.Close();
+                cn.Close();
+                lblSaleTotal.Text = total.ToString("#,##0.00");
+                lblDiscount.Text = discount.ToString("#,##0.00");
+                GetCartTotal();
+                if (hascart) { btnClear.Enabled = true; btnSettle.Enabled = true; btnDiscount.Enabled = true; }
+                else { btnClear.Enabled = false; btnSettle.Enabled = false; btnDiscount.Enabled = false; }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, stitle);
+            }
+        }
+        public void GetCartTotal()
+        {
+            double discount = double.Parse(lblDiscount.Text);
+            double sales = double.Parse(lblSaleTotal.Text) - discount;
+            double vat = sales * 0.12;//VAT: 12% of VAT Payable (Output Tax less Input Tax)
+            double vatable = sales - vat;
+
+            lblVat.Text = vat.ToString("#,##0.00");
+            lblVatable.Text = vatable.ToString("#,##0.00");
+            lblDisplayTotal.Text = sales.ToString("#,##0.00");
         }
     }
 }
