@@ -145,7 +145,7 @@
             this.lblTimer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblTimer.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimer.ForeColor = System.Drawing.Color.White;
-            this.lblTimer.Location = new System.Drawing.Point(0, 603);
+            this.lblTimer.Location = new System.Drawing.Point(0, 627);
             this.lblTimer.Name = "lblTimer";
             this.lblTimer.Size = new System.Drawing.Size(220, 50);
             this.lblTimer.TabIndex = 10;
@@ -350,7 +350,7 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 603);
+            this.btnLogout.Location = new System.Drawing.Point(0, 627);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(200, 50);
             this.btnLogout.TabIndex = 11;
@@ -377,7 +377,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(10, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 653);
+            this.panel1.Size = new System.Drawing.Size(200, 677);
             this.panel1.TabIndex = 5;
             // 
             // btnPass
@@ -514,9 +514,9 @@
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.lblDisplayTotal);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1007, 50);
+            this.panel5.Location = new System.Drawing.Point(1128, 50);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(220, 653);
+            this.panel5.Size = new System.Drawing.Size(220, 677);
             this.panel5.TabIndex = 8;
             // 
             // panel4
@@ -527,7 +527,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(10, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1217, 50);
+            this.panel4.Size = new System.Drawing.Size(1338, 50);
             this.panel4.TabIndex = 7;
             // 
             // pictureBox2
@@ -556,7 +556,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 703);
+            this.panel3.Size = new System.Drawing.Size(10, 727);
             this.panel3.TabIndex = 6;
             // 
             // panel6
@@ -565,7 +565,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(210, 50);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(797, 653);
+            this.panel6.Size = new System.Drawing.Size(918, 677);
             this.panel6.TabIndex = 9;
             // 
             // dgvCash
@@ -600,7 +600,7 @@
             this.dgvCash.Location = new System.Drawing.Point(0, 0);
             this.dgvCash.Name = "dgvCash";
             this.dgvCash.RowHeadersVisible = false;
-            this.dgvCash.Size = new System.Drawing.Size(797, 653);
+            this.dgvCash.Size = new System.Drawing.Size(918, 677);
             this.dgvCash.TabIndex = 11;
             // 
             // Column1
@@ -695,7 +695,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1227, 703);
+            this.ClientSize = new System.Drawing.Size(1348, 727);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel5);
@@ -706,6 +706,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1364, 766);
             this.Name = "Cashier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cashier";

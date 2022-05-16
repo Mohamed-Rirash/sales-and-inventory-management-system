@@ -42,6 +42,7 @@ namespace sales_and_inventory_management_system
         private void btnNTran_Click(object sender, EventArgs e)
         {
             slide(btnNTran);
+            GetTranNo();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -153,6 +154,41 @@ namespace sales_and_inventory_management_system
             lblVat.Text = vat.ToString("#,##0.00");
             lblVatable.Text = vatable.ToString("#,##0.00");
             lblDisplayTotal.Text = sales.ToString("#,##0.00");
+        }
+
+        public void GetTranNo()
+        {
+            try
+            {
+                string sdate = DateTime.Now.ToString("yyyyMMdd");
+                int count;
+                string transno;
+                cn.Open();
+                cm = new SqlCommand("SELECT TOP 1 transno FROM tbCart WHERE transno LIKE '" + sdate + "%' ORDER BY id desc", cn);
+                dr = cm.ExecuteReader();
+                dr.Read();
+                if (dr.HasRows)
+                {
+                    transno = dr[0].ToString();
+                    count = int.Parse(transno.Substring(8, 4));
+                    lblTranNo.Text = sdate + (count + 1);
+                }
+                else
+                {
+                    transno = sdate + "1001";
+                    lblTranNo.Text = transno;
+                }
+                dr.Close();
+                cn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                cn.Close();
+                MessageBox.Show(ex.Message, stitle);
+
+            }
+
         }
     }
 }
