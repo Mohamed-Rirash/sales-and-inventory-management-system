@@ -413,6 +413,7 @@ namespace sales_and_inventory_management_system
 
         private void btnStockEntry_Click(object sender, EventArgs e)
         {
+            openChildForm(new StockIn(this));
             hideSubmenu();
         }
 

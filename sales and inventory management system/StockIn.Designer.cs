@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockIn));
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtConPerson = new System.Windows.Forms.TextBox();
             this.cbSupplier = new System.Windows.Forms.ComboBox();
-            this.LinProduct = new System.Windows.Forms.LinkLabel();
+            this.LinkProduct = new System.Windows.Forms.LinkLabel();
             this.LinGenerate = new System.Windows.Forms.LinkLabel();
             this.txtStockInBy = new System.Windows.Forms.TextBox();
             this.dtFrom = new System.Windows.Forms.DateTimePicker();
@@ -111,17 +111,19 @@
             this.cbSupplier.Name = "cbSupplier";
             this.cbSupplier.Size = new System.Drawing.Size(351, 26);
             this.cbSupplier.TabIndex = 5;
+            this.cbSupplier.TextChanged += new System.EventHandler(this.cbSupplier_TextChanged);
             // 
-            // LinProduct
+            // LinkProduct
             // 
-            this.LinProduct.AutoSize = true;
-            this.LinProduct.LinkColor = System.Drawing.Color.DimGray;
-            this.LinProduct.Location = new System.Drawing.Point(139, 127);
-            this.LinProduct.Name = "LinProduct";
-            this.LinProduct.Size = new System.Drawing.Size(214, 18);
-            this.LinProduct.TabIndex = 4;
-            this.LinProduct.TabStop = true;
-            this.LinProduct.Text = "[ Click here to browse product ]";
+            this.LinkProduct.AutoSize = true;
+            this.LinkProduct.LinkColor = System.Drawing.Color.DimGray;
+            this.LinkProduct.Location = new System.Drawing.Point(139, 127);
+            this.LinkProduct.Name = "LinkProduct";
+            this.LinkProduct.Size = new System.Drawing.Size(214, 18);
+            this.LinkProduct.TabIndex = 4;
+            this.LinkProduct.TabStop = true;
+            this.LinkProduct.Text = "[ Click here to browse product ]";
+            this.LinkProduct.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkProduct_LinkClicked);
             // 
             // LinGenerate
             // 
@@ -133,6 +135,7 @@
             this.LinGenerate.TabIndex = 4;
             this.LinGenerate.TabStop = true;
             this.LinGenerate.Text = "[ Generate ]";
+            this.LinGenerate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinGenerate_LinkClicked);
             // 
             // txtStockInBy
             // 
@@ -166,14 +169,14 @@
             this.dgvInStockHistory.AllowUserToAddRows = false;
             this.dgvInStockHistory.BackgroundColor = System.Drawing.Color.White;
             this.dgvInStockHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInStockHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInStockHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvInStockHistory.ColumnHeadersHeight = 30;
             this.dgvInStockHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvInStockHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -279,6 +282,7 @@
             this.btnLoad.TabIndex = 13;
             this.btnLoad.Text = "Load Record";
             this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // label9
             // 
@@ -358,20 +362,21 @@
             this.btnEntry.TabIndex = 12;
             this.btnEntry.Text = "Entry";
             this.btnEntry.UseVisualStyleBackColor = false;
+            this.btnEntry.Click += new System.EventHandler(this.btnEntry_Click);
             // 
             // dgvStockIn
             // 
             this.dgvStockIn.AllowUserToAddRows = false;
             this.dgvStockIn.BackgroundColor = System.Drawing.Color.White;
             this.dgvStockIn.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStockIn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStockIn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvStockIn.ColumnHeadersHeight = 30;
             this.dgvStockIn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvStockIn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -392,6 +397,7 @@
             this.dgvStockIn.RowHeadersVisible = false;
             this.dgvStockIn.Size = new System.Drawing.Size(976, 256);
             this.dgvStockIn.TabIndex = 5;
+            this.dgvStockIn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStockIn_CellContentClick);
             // 
             // Column1
             // 
@@ -465,7 +471,7 @@
             this.panel2.Controls.Add(this.txtAddress);
             this.panel2.Controls.Add(this.txtConPerson);
             this.panel2.Controls.Add(this.cbSupplier);
-            this.panel2.Controls.Add(this.LinProduct);
+            this.panel2.Controls.Add(this.LinkProduct);
             this.panel2.Controls.Add(this.LinGenerate);
             this.panel2.Controls.Add(this.dtStockIn);
             this.panel2.Controls.Add(this.txtStockInBy);
@@ -580,7 +586,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StockIn";
             this.Text = "STOCK ENTERY";
             this.tabPage2.ResumeLayout(false);
@@ -602,7 +608,7 @@
         public System.Windows.Forms.TextBox txtAddress;
         public System.Windows.Forms.TextBox txtConPerson;
         public System.Windows.Forms.ComboBox cbSupplier;
-        private System.Windows.Forms.LinkLabel LinProduct;
+        private System.Windows.Forms.LinkLabel LinkProduct;
         private System.Windows.Forms.LinkLabel LinGenerate;
         public System.Windows.Forms.TextBox txtStockInBy;
         private System.Windows.Forms.DateTimePicker dtFrom;

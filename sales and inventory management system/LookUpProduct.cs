@@ -56,5 +56,18 @@ namespace sales_and_inventory_management_system
                 qty.ShowDialog();
             }
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            LoadProduct();
+        }
+
+        private void LookUpProduct_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Dispose();
+            }
+        }
     }
 }

@@ -312,6 +312,7 @@
             this.txtBarcode.Name = "txtBarcode";
             this.txtBarcode.Size = new System.Drawing.Size(149, 27);
             this.txtBarcode.TabIndex = 6;
+            this.txtBarcode.TextChanged += new System.EventHandler(this.txtBarcode_TextChanged);
             // 
             // label6
             // 
