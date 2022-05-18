@@ -55,3 +55,34 @@ E:\projects\c# projects\au\finel pos project\sales and inventory management syst
 E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\bin\Debug\FluentValidation.xml
 E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.LookUpProduct.resources
 E:\projects\c# projects\au\finel pos project\sales and inventory management system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Qty.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\sales and inventory management system.exe.config
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\sales and inventory management system.exe
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\sales and inventory management system.pdb
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\FluentValidation.dll
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\MetroFramework.Design.dll
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\MetroFramework.dll
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\FluentValidation.xml
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.AssemblyReference.cache
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Brand.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.BrandModule.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Cashier.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Category.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.CategoryModule.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.LookUpProduct.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.mainform.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Product.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.ProductModule.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Properties.Resources.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Qty.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.StockIn.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.UserAccount.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Vendor.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Vendormodule.resources
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.GenerateResource.cache
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.CoreCompileInputs.cache
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.CopyComplete
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.exe
+C:\Users\Rirash\Desktop\clone\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.pdb

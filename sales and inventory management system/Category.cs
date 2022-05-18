@@ -40,8 +40,8 @@ namespace sales_and_inventory_management_system
             cn.Close();
         }
         #endregion data retreive
-
        
+
         private void dgvCategory_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dgvCategory.Columns[e.ColumnIndex].Name;

@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -41,28 +42,43 @@ namespace sales_and_inventory_management_system
         {
             try
             {
-                if (txtPcode.Text == "")
+                string PricePattern = @"^[0-9.]+$";
+                string DescPattern = @"^[a-z A-Z0-9]+$";
+                string CodePattern = @"^[a-zA-Z0-9]+$";
+                if (txtPcode.Text == String.Empty)
                 {
-                    MessageBox.Show("Please Enter Product Code ", "empty field", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtPcode.Focus();
+                    MessageBox.Show("Please  Enter Product Code", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                else if (txtBarcode.Text == "")
+                else if (Regex.IsMatch(txtPcode.Text, CodePattern) == false)
                 {
-                    MessageBox.Show("Please Enter Product Barcode ", "empty field", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtPcode.Focus();
+                    MessageBox.Show("Please Enter Alpha numberic Values", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                else if (Regex.IsMatch(txtBarcode.Text, CodePattern) == false)
+                {
                     txtBarcode.Focus();
-
+                    MessageBox.Show("Please Enter Alpha numberic Values", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
                 }
-                else if (txtPrice.Text == "")
+                else if (Regex.IsMatch(txtPdesc.Text, DescPattern) == false)
                 {
-                    MessageBox.Show("Please Enter Product Price", "empty field", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtPrice.Focus();
-
-                }
-                else if (txtPdesc.Text == "")
-                {
-                    MessageBox.Show("Please Enter Product discription", "empty field", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtPdesc.Focus();
-
+                    MessageBox.Show("Please Enter Alpha numberic Values", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                else if (txtPrice.Text == string.Empty)
+                {
+                    txtPrice.Focus();
+                    MessageBox.Show("Please Enter Product Price", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                else if (Regex.IsMatch(txtPrice.Text, PricePattern) == false)
+                {
+                    txtPrice.Focus();
+                    MessageBox.Show("Please Enter numberic or decimal Values ", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
                 }
                 else
                 {
@@ -88,7 +104,17 @@ namespace sales_and_inventory_management_system
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message);
+                if (ex is SqlException)
+                {
+                    MessageBox.Show(txtPcode.Text + " Is Allready Their", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtPcode.Focus();
+                    cn.Close();
+                }
+                else
+                {
+                    MessageBox.Show(ex.Message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cn.Close();
+                }
             }
         }
 
@@ -96,32 +122,46 @@ namespace sales_and_inventory_management_system
         {
             try
             {
-                if (txtPcode.Text == "" )
+                string PricePattern = @"^[0-9.]+$";
+                string DescPattern = @"^[a-z A-Z0-9]+$";
+                string CodePattern = @"^[a-zA-Z0-9]+$";
+                if (txtPcode.Text == String.Empty)
                 {
-                    MessageBox.Show("Please Enter Product Code ", "empty field", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtPcode.Focus();
+                    MessageBox.Show("Please  Enter Product Code", "information", MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
-                else if(txtBarcode.Text == "")
+                else if (Regex.IsMatch(txtPcode.Text, CodePattern) == false)
                 {
-                    MessageBox.Show("Please Enter Product Barcode ", "empty field", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtPcode.Focus();
+                    MessageBox.Show("Please Enter Alpha numberic Values", "information", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    return;
+                }
+                /*else if (Regex.IsMatch(txtBarcode.Text, CodePattern) == false)
+                {
                     txtBarcode.Focus();
-
-                }
-                else if(txtPrice.Text == "")
+                    MessageBox.Show("Please Enter Alpha numberic Values", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }*/
+                else if (Regex.IsMatch(txtPdesc.Text, DescPattern) == false)
                 {
-                    MessageBox.Show("Please Enter Product Price", "empty field", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtPrice.Focus();
-
-                }
-                else if (txtPdesc.Text == "")
-                {
-                    MessageBox.Show("Please Enter Product discription", "empty field", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtPdesc.Focus();
-
+                    MessageBox.Show("Please Enter Alpha numberic Values", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                else if (txtPrice.Text == string.Empty)
+                {
+                    txtPrice.Focus();
+                    MessageBox.Show("Please Enter Product Price", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                else if (Regex.IsMatch(txtPrice.Text, PricePattern) == false)
+                {
+                    txtPrice.Focus();
+                    MessageBox.Show("Please Enter numberic or decimal Values ", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
                 }
                 else
                 {
-
 
                     if (MessageBox.Show("Are you sure want to save this product?", "Save Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
@@ -146,7 +186,17 @@ namespace sales_and_inventory_management_system
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                if (ex is SqlException)
+                {
+                    MessageBox.Show(txtPcode.Text + " Is Allready Their", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtPcode.Focus();
+                    cn.Close();
+                }
+                else
+                {
+                    MessageBox.Show(ex.Message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cn.Close();
+                }
             }
         }
 

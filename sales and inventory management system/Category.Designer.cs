@@ -179,8 +179,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvCategory;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -189,5 +187,6 @@
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton btnadd;
         private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.DataGridView dgvCategory;
     }
 }

@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -32,12 +33,22 @@ namespace sales_and_inventory_management_system
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // To insert brand name to brand table 
+         
             try
             {
-                if (txtBrand.Text == "")
+                string NamePattern = @"^[a-zA-Z 0-9]+$";
+               
+                if (txtBrand.Text == String.Empty)
                 {
-                    MessageBox.Show("Please Enter Brand Name", "empty field", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtBrand.Focus();
+                    MessageBox.Show(" Fill the category");
+                }
+                else if (Regex.IsMatch(txtBrand.Text, NamePattern) == false)
+                {
+
+                    txtBrand.Focus();
+                    MessageBox.Show("Please Enter charectors only");
+                    return;
                 }
                 else
                 {
@@ -57,8 +68,18 @@ namespace sales_and_inventory_management_system
             }
             catch (Exception ex)
             {
+                if (ex is SqlException)
+                {
+                    MessageBox.Show(txtBrand.Text + " Is Allready Their", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtBrand.Focus();
+                    cn.Close();
+                }
+                else
+                {
+                    MessageBox.Show(ex.Message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cn.Close();
+                }
 
-                MessageBox.Show(ex.Message);
             }
         }
 
@@ -70,16 +91,47 @@ namespace sales_and_inventory_management_system
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             //Update brand name
-            if (MessageBox.Show("Are you sure you want to update this brand?", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            try
             {
-                cn.Open();
-                cm = new SqlCommand("UPDATE tbBrand SET brand = @brand WHERE id LIKE'" + lblId.Text + "'", cn);
-                cm.Parameters.AddWithValue("@brand", txtBrand.Text);
-                cm.ExecuteNonQuery();
-                cn.Close();
-                MessageBox.Show("Brand has been successfully updated.", "Sale MS");
-                Clear();
-                this.Dispose();// To close this form after update data
+                string NamePattern = @"^[a-zA-Z 0-9]+$";
+                if (txtBrand.Text == String.Empty)
+                {
+                    txtBrand.Focus();
+                    MessageBox.Show(" Fill the category");
+                }
+                else if (Regex.IsMatch(txtBrand.Text, NamePattern) == false)
+                {
+
+                    txtBrand.Focus();
+                    MessageBox.Show("Please Enter charectors only");
+                    return;
+                }
+                if (MessageBox.Show("Are you sure you want to update this brand?", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    cn.Open();
+                    cm = new SqlCommand("UPDATE tbBrand SET brand = @brand WHERE id LIKE'" + lblId.Text + "'", cn);
+                    cm.Parameters.AddWithValue("@brand", txtBrand.Text);
+                    cm.ExecuteNonQuery();
+                    cn.Close();
+                    MessageBox.Show("Brand has been successfully updated.", "Sale MS");
+                    Clear();
+                    this.Dispose();// To close this form after update data
+                }
+            }
+            catch (Exception ex)
+            {
+
+                if (ex is SqlException)
+                {
+                    MessageBox.Show(txtBrand.Text + " Is Allready Their", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtBrand.Focus();
+                    cn.Close();
+                }
+                else
+                {
+                    MessageBox.Show(ex.Message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cn.Close();
+                }
             }
         }
 # endregion brand buttons

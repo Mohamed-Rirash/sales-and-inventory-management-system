@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -33,22 +34,48 @@ namespace sales_and_inventory_management_system
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (txtCategory.Text == "")
+            try
             {
-                MessageBox.Show("Please Enter Category ", "empty field", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                if (MessageBox.Show("Are you sure you want to update this category?", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                string categorypattern = @"^[a-zA-Z]+$";
+                if (txtCategory.Text == String.Empty)
                 {
-                    cn.Open();
-                    cm = new SqlCommand("UPDATE tbCategory SET category = @category WHERE id LIKE'" + lblId.Text + "'", cn);
-                    cm.Parameters.AddWithValue("@category", txtCategory.Text);
-                    cm.ExecuteNonQuery();
+                    txtCategory.Focus();
+                    MessageBox.Show(" Fill the category");
+                }
+                else if (Regex.IsMatch(txtCategory.Text, categorypattern) == false)
+                {
+
+                    txtCategory.Focus();
+                    MessageBox.Show("Please Enter charectors only");
+                    return;
+                }
+                else
+                {
+                    if (MessageBox.Show("Are you sure you want to update this category?", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        cn.Open();
+                        cm = new SqlCommand("UPDATE tbCategory SET category = @category WHERE id LIKE'" + lblId.Text + "'", cn);
+                        cm.Parameters.AddWithValue("@category", txtCategory.Text);
+                        cm.ExecuteNonQuery();
+                        cn.Close();
+                        MessageBox.Show("Category has been successfully updated.", "Sales MS");
+                        Clear();
+                        this.Dispose();// To close this form after update data
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex is SqlException)
+                {
+                    MessageBox.Show(txtCategory.Text + " Is Allready Their", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtCategory.Focus();
                     cn.Close();
-                    MessageBox.Show("Category has been successfully updated.", "Sales MS");
-                    Clear();
-                    this.Dispose();// To close this form after update data
+                }
+                else
+                {
+                    MessageBox.Show(ex.Message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cn.Close();
                 }
             }
         }
@@ -57,17 +84,30 @@ namespace sales_and_inventory_management_system
         {
             Clear();
         }
-
+               
         private void btnSave_Click(object sender, EventArgs e)
         {
             try
             {
-                if (txtCategory.Text == "")
+                string categorypattern = @"^[a-zA-Z]+$";
+                if (txtCategory.Text == String.Empty)
                 {
-                    MessageBox.Show("Please Enter Category ", "empty field", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                    }
+                    txtCategory.Focus();
+                    MessageBox.Show(" Fill the category");
+                }
+                else if (Regex.IsMatch(txtCategory.Text, categorypattern) == false)
+                {
+
+                    txtCategory.Focus();
+                    MessageBox.Show("Please Enter charectors only");
+                    return;
+                }
+                
+
                 else
                 {
+                    
+
                     if (MessageBox.Show("Are you sure you want to save this Category?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         cn.Open();
@@ -79,14 +119,24 @@ namespace sales_and_inventory_management_system
                         Clear();
                     }
                     category.LoadCategory();
-                }
-            }
-            catch (Exception ex)
-            {
 
-                MessageBox.Show(ex.Message);
             }
         }
+            catch (Exception ex)
+            {                               
+                if (ex is SqlException)
+                {
+                    MessageBox.Show(txtCategory.Text + " Is Allready Their" ,"Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    txtCategory.Focus();
+                    cn.Close();
+                }
+                else
+                {
+                    MessageBox.Show(ex.Message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cn.Close();
+                }
+            }
+}
         #endregion category buttons
 
         // clear textbox

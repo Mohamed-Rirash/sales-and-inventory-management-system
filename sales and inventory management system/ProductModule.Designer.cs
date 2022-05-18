@@ -68,7 +68,7 @@
             0,
             0});
             this.UDReOrder.Name = "UDReOrder";
-            this.UDReOrder.Size = new System.Drawing.Size(249, 26);
+            this.UDReOrder.Size = new System.Drawing.Size(249, 24);
             this.UDReOrder.TabIndex = 34;
             this.UDReOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.UDReOrder.Value = new decimal(new int[] {
@@ -80,17 +80,17 @@
             // cboCategory
             // 
             this.cboCategory.FormattingEnabled = true;
-            this.cboCategory.Location = new System.Drawing.Point(172, 270);
+            this.cboCategory.Location = new System.Drawing.Point(175, 234);
             this.cboCategory.Name = "cboCategory";
-            this.cboCategory.Size = new System.Drawing.Size(249, 28);
+            this.cboCategory.Size = new System.Drawing.Size(249, 26);
             this.cboCategory.TabIndex = 32;
             // 
             // cboBrand
             // 
             this.cboBrand.FormattingEnabled = true;
-            this.cboBrand.Location = new System.Drawing.Point(172, 236);
+            this.cboBrand.Location = new System.Drawing.Point(175, 266);
             this.cboBrand.Name = "cboBrand";
-            this.cboBrand.Size = new System.Drawing.Size(249, 28);
+            this.cboBrand.Size = new System.Drawing.Size(249, 26);
             this.cboBrand.TabIndex = 31;
             // 
             // btnSave
@@ -143,7 +143,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(31, 376);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(128, 20);
+            this.label8.Size = new System.Drawing.Size(116, 18);
             this.label8.TabIndex = 27;
             this.label8.Text = "Re-Order Level :";
             // 
@@ -152,25 +152,25 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(31, 330);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 20);
+            this.label7.Size = new System.Drawing.Size(50, 18);
             this.label7.TabIndex = 22;
             this.label7.Text = "Price :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(31, 270);
+            this.label6.Location = new System.Drawing.Point(34, 234);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 20);
+            this.label6.Size = new System.Drawing.Size(76, 18);
             this.label6.TabIndex = 25;
             this.label6.Text = "Category :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(31, 236);
+            this.label5.Location = new System.Drawing.Point(34, 266);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 20);
+            this.label5.Size = new System.Drawing.Size(55, 18);
             this.label5.TabIndex = 24;
             this.label5.Text = "Brand :";
             // 
@@ -179,7 +179,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(31, 123);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 20);
+            this.label3.Size = new System.Drawing.Size(72, 18);
             this.label3.TabIndex = 23;
             this.label3.Text = "Barcode :";
             // 
@@ -195,14 +195,14 @@
             // 
             this.txtBarcode.Location = new System.Drawing.Point(174, 123);
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(247, 26);
+            this.txtBarcode.Size = new System.Drawing.Size(247, 24);
             this.txtBarcode.TabIndex = 19;
             // 
             // txtPcode
             // 
             this.txtPcode.Location = new System.Drawing.Point(174, 91);
             this.txtPcode.Name = "txtPcode";
-            this.txtPcode.Size = new System.Drawing.Size(247, 26);
+            this.txtPcode.Size = new System.Drawing.Size(247, 24);
             this.txtPcode.TabIndex = 18;
             // 
             // panel1
@@ -230,11 +230,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 18);
+            this.label1.Size = new System.Drawing.Size(127, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Product Module";
             // 
@@ -243,7 +243,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(31, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 20);
+            this.label4.Size = new System.Drawing.Size(91, 18);
             this.label4.TabIndex = 28;
             this.label4.Text = "Description :";
             // 
@@ -252,7 +252,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(31, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 20);
+            this.label2.Size = new System.Drawing.Size(108, 18);
             this.label2.TabIndex = 26;
             this.label2.Text = "Product Code :";
             // 
@@ -260,13 +260,13 @@
             // 
             this.txtPrice.Location = new System.Drawing.Point(174, 330);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(247, 26);
+            this.txtPrice.Size = new System.Drawing.Size(247, 24);
             this.txtPrice.TabIndex = 33;
             this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // ProductModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(505, 482);
@@ -288,7 +288,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ProductModule";
