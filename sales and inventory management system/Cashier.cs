@@ -28,7 +28,7 @@ namespace sales_and_inventory_management_system
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
-           // GetTranNo();
+            GetTranNo();
             lblDate.Text = DateTime.Now.ToShortDateString();
         }
         public void slide(Button button)
@@ -57,7 +57,10 @@ namespace sales_and_inventory_management_system
         private void btnDiscount_Click(object sender, EventArgs e)
         {
             slide(btnDiscount);
-
+            Discount discount = new Discount(this);
+            discount.lbId.Text = id;
+            discount.txtTotalPrice.Text = price;
+            discount.ShowDialog();
 
         }
 
@@ -291,6 +294,13 @@ namespace sales_and_inventory_management_system
             {
                 MessageBox.Show(ex.Message, stitle);
             }
+        }
+
+        private void dgvCash_SelectionChanged(object sender, EventArgs e)
+        {
+            int i = dgvCash.CurrentRow.Index;
+            id = dgvCash[1, i].Value.ToString();
+            price = dgvCash[7, i].Value.ToString();
         }
     }
 }
