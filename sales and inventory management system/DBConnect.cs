@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace sales_and_inventory_management_system
 {
@@ -31,6 +32,22 @@ namespace sales_and_inventory_management_system
                 adapter.Fill(table);
                 return table;
             }
-        
+        // executequery to delete add and subtrack in transaction
+        public void ExecuteQuery(String sql)
+        {
+            try
+            {
+                cn.ConnectionString = myConnection();
+                cn.Open();
+                cm = new SqlCommand(sql, cn);
+                cm.ExecuteNonQuery();
+                cn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
     }
 }

@@ -145,6 +145,12 @@
     <Compile Include="Qty.Designer.cs">
       <DependentUpon>Qty.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settle Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settle Payment.Designer.cs">
+      <DependentUpon>Settle Payment.cs</DependentUpon>
+    </Compile>
     <Compile Include="StockIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +219,9 @@
     </Compile>
     <EmbeddedResource Include="Qty.resx">
       <DependentUpon>Qty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settle Payment.resx">
+      <DependentUpon>Settle Payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StockIn.resx">
       <DependentUpon>StockIn.cs</DependentUpon>

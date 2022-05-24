@@ -185,5 +185,7 @@ namespace sales_and_inventory_management_system
             dr.Close();
             cn.Close();
         }
+
+       
     }
 }

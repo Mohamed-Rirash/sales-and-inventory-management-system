@@ -603,6 +603,7 @@
             this.dgvCash.RowHeadersVisible = false;
             this.dgvCash.Size = new System.Drawing.Size(918, 677);
             this.dgvCash.TabIndex = 11;
+            this.dgvCash.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCash_CellContentClick);
             this.dgvCash.SelectionChanged += new System.EventHandler(this.dgvCash_SelectionChanged);
             // 
             // Column1
