@@ -94,5 +94,98 @@ namespace sales_and_inventory_management_system
         }
 
         #endregion add acount
+
+        private void btnPassSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtCurPass.Text != main._pass)
+                {
+                    MessageBox.Show("Current password did not martch!", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (txtNPass.Text != txtRePass2.Text)
+                {
+                    MessageBox.Show("Confirm new password did not martch!", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                dbcon.ExecuteQuery("UPDATE tbUser SET password= '" + txtNPass.Text + "' WHERE username='" + lblUsername.Text + "'");
+                MessageBox.Show("Password has been succefully changed!", "Changed Password", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearCP();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+            }
+        }
+
+        private void btnPassCancel_Click(object sender, EventArgs e)
+        {
+            ClearCP();
+        }
+
+        public void ClearCP()
+        {
+            txtCurPass.Clear();
+            txtNPass.Clear();
+            txtRePass2.Clear();
+        }
+
+        private void UserAccount_Load(object sender, EventArgs e)
+        {
+            lblUsername.Text = main.lblUsername.Text;
+        }
+
+        private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = dgvUser.CurrentRow.Index;
+            username = dgvUser[1, i].Value.ToString();
+            name = dgvUser[2, i].Value.ToString();
+            role = dgvUser[4, i].Value.ToString();
+            accstatus = dgvUser[3, i].Value.ToString();
+            if (lblUsername.Text == username)
+            {
+                btnRemove.Enabled = false;
+                btnResetPass.Enabled = false;
+                lblAccNote.Text = "To change your password, go to change password tag.";
+
+            }
+            else
+            {
+                btnRemove.Enabled = true;
+                btnResetPass.Enabled = true;
+                lblAccNote.Text = "To change the password for " + username + ", click Reset Password.";
+            }
+            gbUser.Text = "Password For " + username;
+
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            if ((MessageBox.Show("You chose to remove this account from this Point Of Sales System's user list. \n\n Are you sure you want to remove '" + username + "' \\ '" + role + "'", "User Account", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes))
+            {
+                dbcon.ExecuteQuery("DELETE FROM tbUser WHERE username = '" + username + "'");
+                MessageBox.Show("Account has been successfully deleted");
+                LoadUser();
+            }
+        }
+
+        private void btnProperties_Click(object sender, EventArgs e)
+        {
+            UserProperties properties = new UserProperties(this);
+            properties.Text = name + "\\" + username + " Properties";
+            properties.txtName.Text = name;
+            properties.cbRole.Text = role;
+            properties.cbActivate.Text = accstatus;
+            properties.username = username;
+            properties.ShowDialog();
+        }
+
+        private void btnResetPass_Click(object sender, EventArgs e)
+        {
+            ResetPassword reset = new ResetPassword(this);
+            reset.ShowDialog();
+        }
     }
 }

@@ -106,6 +106,12 @@
     <Compile Include="CategoryModule.Designer.cs">
       <DependentUpon>CategoryModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="DailySale.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +169,12 @@
     <Compile Include="Qty.Designer.cs">
       <DependentUpon>Qty.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settle_Payment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,11 +187,23 @@
     <Compile Include="StockIn.Designer.cs">
       <DependentUpon>StockIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserAccount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserAccount.Designer.cs">
       <DependentUpon>UserAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserProperties.Designer.cs">
+      <DependentUpon>UserProperties.cs</DependentUpon>
     </Compile>
     <Compile Include="Vendor.cs">
       <SubType>Form</SubType>
@@ -217,6 +241,9 @@
     <EmbeddedResource Include="CategoryModule.resx">
       <DependentUpon>CategoryModule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DailySale.resx">
       <DependentUpon>DailySale.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,14 +280,23 @@
     <EmbeddedResource Include="Qty.resx">
       <DependentUpon>Qty.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settle_Payment.resx">
       <DependentUpon>Settle_Payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StockIn.resx">
       <DependentUpon>StockIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserAccount.resx">
       <DependentUpon>UserAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProperties.resx">
+      <DependentUpon>UserProperties.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vendor.resx">
       <DependentUpon>Vendor.cs</DependentUpon>

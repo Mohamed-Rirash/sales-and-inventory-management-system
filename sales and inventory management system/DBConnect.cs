@@ -49,5 +49,35 @@ namespace sales_and_inventory_management_system
             }
 
         }
+
+        public String getPassword(string username)
+        {
+            string password = "";
+            cn.ConnectionString = myConnection();
+            cn.Open();
+            cm = new SqlCommand("SELECT password FROM tbUser WHERE username = '" + username + "'", cn);
+            dr = cm.ExecuteReader();
+            dr.Read();
+            if (dr.HasRows)
+            {
+                password = dr["password"].ToString();
+            }
+            dr.Close();
+            cn.Close();
+            return password;
+        }
+
+        public double ExtractData(string sql)
+        {
+
+            cn = new SqlConnection();
+            cn.ConnectionString = myConnection();
+            cn.Open();
+            cm = new SqlCommand(sql, cn);
+            double data = double.Parse(cm.ExecuteScalar().ToString());
+            cn.Close();
+            return data;
+
+        }
     }
 }

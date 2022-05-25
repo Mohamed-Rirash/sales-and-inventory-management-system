@@ -371,6 +371,8 @@ namespace sales_and_inventory_management_system
         private void btnStore_Click(object sender, EventArgs e)
         {
             hideSubmenu();
+            Store store = new Store();
+            store.ShowDialog();
         }
 
         private void btnUser_Click(object sender, EventArgs e)

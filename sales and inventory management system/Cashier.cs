@@ -109,6 +109,8 @@ namespace sales_and_inventory_management_system
         private void btnPass_Click(object sender, EventArgs e)
         {
             slide(btnPass);
+            ChangePassword change = new ChangePassword(this);
+            change.ShowDialog();
 
         }
 
