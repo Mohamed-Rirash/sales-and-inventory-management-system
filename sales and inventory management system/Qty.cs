@@ -68,6 +68,8 @@ namespace sales_and_inventory_management_system
                         if (qty < (int.Parse(txtQty.Text) + cart_qty))
                         {
                             MessageBox.Show("Unable to procced. Remaining qty on hand is" + qty, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            cn.Close();
+
                             return;
                         }
                         cn.Open();
@@ -84,6 +86,7 @@ namespace sales_and_inventory_management_system
                         if (qty < (int.Parse(txtQty.Text) + cart_qty))
                         {
                             MessageBox.Show("Unable to procced. Remaining qty on hand is" + qty, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            cn.Close();
                             return;
                         }
                         cn.Open();
@@ -105,6 +108,8 @@ namespace sales_and_inventory_management_system
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, stitle);
+                    cn.Close();
+
                 }
             }
         }

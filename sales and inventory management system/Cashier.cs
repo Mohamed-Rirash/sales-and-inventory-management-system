@@ -68,6 +68,7 @@ namespace sales_and_inventory_management_system
         {
             slide(btnSettle);
             Settle_Payment settle = new Settle_Payment(this);
+            settle.txtSale.Text = lblDisplayTotal.Text;
             settle.ShowDialog();
         }
 
@@ -105,6 +106,17 @@ namespace sales_and_inventory_management_system
         private void btnLogout_Click(object sender, EventArgs e)
         {
             slide(btnLogout);
+            if (dgvCash.Rows.Count > 0)
+            {
+                MessageBox.Show("Unable to logout. Please cancel the transaction.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (MessageBox.Show("Logout Application?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                Login login = new Login();
+                login.ShowDialog();
+            }
 
         }
 

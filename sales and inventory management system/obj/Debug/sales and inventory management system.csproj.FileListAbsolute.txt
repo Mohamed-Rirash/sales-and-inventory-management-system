@@ -120,3 +120,4 @@ E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-managem
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.ProductStockIn.resources
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Discount.resources
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Settle_Payment.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Login.resources

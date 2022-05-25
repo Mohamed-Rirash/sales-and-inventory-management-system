@@ -85,7 +85,7 @@ namespace sales_and_inventory_management_system
 
         private void btnZero_Click(object sender, EventArgs e)
         {
-            txtCash.Text += btnDZero.Text;
+            txtCash.Text += btnZero.Text;
         }
 
         private void btnDZero_Click(object sender, EventArgs e)
