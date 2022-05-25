@@ -420,6 +420,12 @@ namespace sales_and_inventory_management_system
         private void btnLogout_Click(object sender, EventArgs e)
         {
             hideSubmenu();
+            if (MessageBox.Show("Logout Application?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                Login login = new Login();
+                login.ShowDialog();
+            }
         }
 
         private void brnbackup_Click(object sender, EventArgs e)

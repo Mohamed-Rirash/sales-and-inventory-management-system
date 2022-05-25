@@ -81,6 +81,15 @@ namespace sales_and_inventory_management_system
         private void btnDSales_Click(object sender, EventArgs e)
         {
             slide(btnDSales);
+            DailySale dailySale = new DailySale(new mainform());
+            dailySale.solduser = lblUsername.Text;
+            dailySale.dtFrom.Enabled = false;
+            dailySale.dtTo.Enabled = false;
+            dailySale.cboCashier.Enabled = false;
+            dailySale.cboCashier.Text = lblUsername.Text;
+            dailySale.picClose.Visible = true;
+            dailySale.lblTitle.Visible = true;
+            dailySale.ShowDialog();
 
         }
 
