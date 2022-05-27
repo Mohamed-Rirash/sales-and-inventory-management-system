@@ -16,7 +16,7 @@ namespace sales_and_inventory_management_system
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
-        SqlDataReader dr;
+       // SqlDataReader dr;
         Cashier cashier;
         public ChangePassword(Cashier cash)
         {

@@ -38,9 +38,9 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtName = new MetroFramework.Controls.MetroTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.llblhelp = new System.Windows.Forms.LinkLabel();
+            this.txtName = new MetroFramework.Controls.MetroTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
@@ -177,41 +177,6 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Please Login First";
             // 
-            // txtName
-            // 
-            // 
-            // 
-            // 
-            this.txtName.CustomButton.Image = null;
-            this.txtName.CustomButton.Location = new System.Drawing.Point(238, 1);
-            this.txtName.CustomButton.Name = "";
-            this.txtName.CustomButton.Size = new System.Drawing.Size(29, 29);
-            this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtName.CustomButton.TabIndex = 1;
-            this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtName.CustomButton.UseSelectable = true;
-            this.txtName.CustomButton.Visible = false;
-            this.txtName.DisplayIcon = true;
-            this.txtName.Icon = ((System.Drawing.Image)(resources.GetObject("txtName.Icon")));
-            this.txtName.Lines = new string[0];
-            this.txtName.Location = new System.Drawing.Point(333, 300);
-            this.txtName.MaxLength = 32767;
-            this.txtName.Multiline = true;
-            this.txtName.Name = "txtName";
-            this.txtName.PasswordChar = '\0';
-            this.txtName.PromptText = "Username";
-            this.txtName.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtName.SelectedText = "";
-            this.txtName.SelectionLength = 0;
-            this.txtName.SelectionStart = 0;
-            this.txtName.ShortcutsEnabled = true;
-            this.txtName.Size = new System.Drawing.Size(268, 31);
-            this.txtName.TabIndex = 0;
-            this.txtName.UseSelectable = true;
-            this.txtName.WaterMark = "Username";
-            this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -232,11 +197,47 @@
             this.llblhelp.Text = "Reques admin Help";
             this.llblhelp.Visible = false;
             // 
+            // txtName
+            // 
+            // 
+            // 
+            // 
+            this.txtName.CustomButton.Image = null;
+            this.txtName.CustomButton.Location = new System.Drawing.Point(238, 1);
+            this.txtName.CustomButton.Name = "";
+            this.txtName.CustomButton.Size = new System.Drawing.Size(29, 29);
+            this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtName.CustomButton.TabIndex = 1;
+            this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtName.CustomButton.UseSelectable = true;
+            this.txtName.CustomButton.Visible = false;
+            this.txtName.DisplayIcon = true;
+            this.txtName.Icon = ((System.Drawing.Image)(resources.GetObject("txtName.Icon")));
+            this.txtName.Lines = new string[0];
+            this.txtName.Location = new System.Drawing.Point(333, 305);
+            this.txtName.MaxLength = 32767;
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.PromptText = "Username";
+            this.txtName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtName.SelectedText = "";
+            this.txtName.SelectionLength = 0;
+            this.txtName.SelectionStart = 0;
+            this.txtName.ShortcutsEnabled = true;
+            this.txtName.Size = new System.Drawing.Size(268, 31);
+            this.txtName.TabIndex = 23;
+            this.txtName.UseSelectable = true;
+            this.txtName.WaterMark = "Username";
+            this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(934, 611);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.llblhelp);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.panel1);
@@ -244,7 +245,6 @@
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtName);
             this.Controls.Add(this.pictureBox2);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -272,8 +272,8 @@
         public System.Windows.Forms.Button btnLogin;
         public System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label2;
-        private MetroFramework.Controls.MetroTextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.LinkLabel llblhelp;
+        private MetroFramework.Controls.MetroTextBox txtName;
     }
 }

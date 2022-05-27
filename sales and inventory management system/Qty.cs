@@ -36,7 +36,7 @@ namespace sales_and_inventory_management_system
             this.transno = transno;
             this.qty = qty;
         }
-           
+
 
         private void txtQty_KeyPress_1(object sender, KeyPressEventArgs e)
         {

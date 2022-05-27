@@ -53,11 +53,13 @@ namespace sales_and_inventory_management_system
             string colName = dgvProduct.Columns[e.ColumnIndex].Name;
             if (colName == "Select")
             {
+               
                 if (stockIn.txtStockInBy.Text == string.Empty)
                 {
+                    cn.Close();
                     MessageBox.Show("Please enter stock in by name", stitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     stockIn.txtStockInBy.Focus();
-                    this.Dispose();
+                   
                 }
 
                 if (MessageBox.Show("Add this item?", stitle, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -84,11 +86,12 @@ namespace sales_and_inventory_management_system
                 cn.Close();
                 stockIn.LoadStockIn();
 
-            }
+        }
             catch (Exception ex)
             {
+                cn.Close();
                 MessageBox.Show(ex.Message, stitle);
             }
-        }
+}
     }
 }

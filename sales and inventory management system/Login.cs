@@ -34,7 +34,7 @@ namespace sales_and_inventory_management_system
                 Application.Exit();
             }
         }
-        string _username = "", _name = "", _role = "";
+       public string _username = "", _name = "", _role = "";
         int attempt = 1;
         private void btnLogin_Click(object sender, EventArgs e)
         {

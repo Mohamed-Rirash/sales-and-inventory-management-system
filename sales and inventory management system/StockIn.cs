@@ -123,7 +123,7 @@ namespace sales_and_inventory_management_system
         public void Clear()
         {
             txtRefNo.Clear();
-            txtStockInBy.Clear();
+          //  txtStockInBy.Clear();
             dtStockIn.Value = DateTime.Now;
         }
 

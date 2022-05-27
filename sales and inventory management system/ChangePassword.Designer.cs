@@ -98,7 +98,7 @@
             this.txtPass.MaxLength = 32767;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '●';
-            this.txtPass.PromptText = "Current Password";
+           this.txtPass.PromptText = "Current Password";
             this.txtPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtPass.SelectedText = "";
             this.txtPass.SelectionLength = 0;

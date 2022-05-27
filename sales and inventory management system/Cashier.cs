@@ -48,9 +48,30 @@ namespace sales_and_inventory_management_system
         private void btnSearch_Click(object sender, EventArgs e)
         {
             slide(btnSearch);
-            LookUpProduct lookUp = new LookUpProduct(this);
-            lookUp.LoadProduct();
-            lookUp.ShowDialog();
+            if (lblcustomername.Text == String.Empty)
+            {
+                customerName name = new customerName(this);
+                name.ShowDialog();
+                if (lblcustomername.Text != String.Empty)
+                {
+                    LookUpProduct lookUp = new LookUpProduct(this);
+                    lookUp.LoadProduct();
+                    lookUp.ShowDialog();
+                }
+
+
+            }
+            else
+            {
+                if (lblcustomername.Text != String.Empty)
+                {
+                    LookUpProduct lookUp = new LookUpProduct(this);
+                    lookUp.LoadProduct();
+                    lookUp.ShowDialog();
+                }
+            }
+
+           
 
         }
 
@@ -200,6 +221,7 @@ namespace sales_and_inventory_management_system
                     transno = dr[0].ToString();
                     count = int.Parse(transno.Substring(8, 4));
                     lblTranNo.Text = sdate + (count + 1);
+                    lblcustomername.Text = null;
                 }
                 else
                 {

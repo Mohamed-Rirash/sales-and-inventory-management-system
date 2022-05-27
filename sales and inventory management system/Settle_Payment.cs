@@ -97,6 +97,8 @@ namespace sales_and_inventory_management_system
         {
             try
             {
+
+
                 if ((double.Parse(txtChange.Text) < 0) || (txtCash.Text.Equals("")))
                 {
                     MessageBox.Show("Insufficient amount, Please enter the corret amount!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -116,9 +118,9 @@ namespace sales_and_inventory_management_system
                         cm.ExecuteNonQuery();
                         cn.Close();
                     }
-                    //Recept recept = new Recept(cashier);
-                   // recept.LoadRecept(txtCash.Text, txtChange.Text);
-                   // recept.ShowDialog();
+                     Recept recept = new Recept(cashier);
+                     recept.LoadRecept(txtCash.Text, txtChange.Text);
+                     recept.ShowDialog();
 
                     MessageBox.Show("Payment successfully saved!", "Payment", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cashier.GetTranNo();
