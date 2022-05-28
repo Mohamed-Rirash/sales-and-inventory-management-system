@@ -74,6 +74,7 @@ namespace sales_and_inventory_management_system
                 ReportParameter pAddress = new ReportParameter("pAddress", address);
                 ReportParameter pTransaction = new ReportParameter("pTransaction", "Invoice #: " + cashier.lblTranNo.Text);
                 ReportParameter pCashier = new ReportParameter("pCashier", cashier.lblUsername.Text);
+                ReportParameter pcustomername = new ReportParameter("pcustomaername", cashier.lblcustomername.Text);
 
                 reportViewer1.LocalReport.SetParameters(pVatable);
                 reportViewer1.LocalReport.SetParameters(pVat);
@@ -85,6 +86,8 @@ namespace sales_and_inventory_management_system
                 reportViewer1.LocalReport.SetParameters(pAddress);
                 reportViewer1.LocalReport.SetParameters(pTransaction);
                 reportViewer1.LocalReport.SetParameters(pCashier);
+                reportViewer1.LocalReport.SetParameters(pcustomername);
+
 
                 rptDataSourece = new ReportDataSource("DataSet1", ds.Tables["dtRecept"]);
                 reportViewer1.LocalReport.DataSources.Add(rptDataSourece);

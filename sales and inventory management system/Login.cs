@@ -44,7 +44,7 @@ namespace sales_and_inventory_management_system
 
             try
             {
-                if (txtName.Text == String.Empty || txtPass.Text == String.Empty)
+                if (txtName.Text == "UserName" || txtPass.Text == "Password")
                 {
                     MessageBox.Show("Please Fill UserName and Password", "Empty space", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtName.Focus();
@@ -146,7 +146,43 @@ namespace sales_and_inventory_management_system
         
 
 
-    }
+        }
+        
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Exit Application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void txtName_Enter(object sender, EventArgs e)
+        {
+            if (txtName.Text == "UserName")
+            {
+                txtName.Text = "";
+                txtName.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtName_Leave(object sender, EventArgs e)
+        {
+            if (txtName.Text == "")
+            {
+                txtName.Text = "UserName";
+                txtName.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void txtPass_Enter(object sender, EventArgs e)
+        {
+            if (txtPass.Text == "Password")
+            {
+                txtPass.Text = "";
+                txtPass.ForeColor = Color.Black;
+            }
+        }
 
         private void txtPass_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -156,12 +192,48 @@ namespace sales_and_inventory_management_system
             }
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void txtName_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (MessageBox.Show("Exit Application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (e.KeyChar == 13)
             {
-                Application.Exit();
+                txtName.Multiline = false;
+                txtPass.Focus();
             }
         }
+
+        private void btnshow_Click(object sender, EventArgs e)
+        {
+            
+            if (txtPass.PasswordChar == '●')
+            {
+                btnhide.BringToFront();
+                txtPass.PasswordChar = '\0';
+            }
+        }
+
+        private void btnhide_Click(object sender, EventArgs e)
+        {
+            if (txtPass.PasswordChar == '\0')
+            {
+                btnshow.BringToFront();
+                txtPass.PasswordChar = '●';
+            }
+        }
+
+        private void txtPass_Leave(object sender, EventArgs e)
+        {
+            if (txtPass.Text == "")
+            {
+                txtPass.Text = "Password";
+                txtPass.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

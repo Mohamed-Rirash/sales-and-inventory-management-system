@@ -29,60 +29,37 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.txtPass = new MetroFramework.Controls.MetroTextBox();
             this.picClose = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.llblhelp = new System.Windows.Forms.LinkLabel();
-            this.txtName = new MetroFramework.Controls.MetroTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnexit = new System.Windows.Forms.Button();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.btnshow = new FontAwesome.Sharp.IconButton();
+            this.btnhide = new FontAwesome.Sharp.IconButton();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtPass
-            // 
-            // 
-            // 
-            // 
-            this.txtPass.CustomButton.Image = null;
-            this.txtPass.CustomButton.Location = new System.Drawing.Point(238, 1);
-            this.txtPass.CustomButton.Name = "";
-            this.txtPass.CustomButton.Size = new System.Drawing.Size(29, 29);
-            this.txtPass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtPass.CustomButton.TabIndex = 1;
-            this.txtPass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtPass.CustomButton.UseSelectable = true;
-            this.txtPass.CustomButton.Visible = false;
-            this.txtPass.DisplayIcon = true;
-            this.txtPass.Icon = ((System.Drawing.Image)(resources.GetObject("txtPass.Icon")));
-            this.txtPass.Lines = new string[0];
-            this.txtPass.Location = new System.Drawing.Point(43, 293);
-            this.txtPass.MaxLength = 32767;
-            this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '●';
-            this.txtPass.PromptText = "Password";
-            this.txtPass.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtPass.SelectedText = "";
-            this.txtPass.SelectionLength = 0;
-            this.txtPass.SelectionStart = 0;
-            this.txtPass.ShortcutsEnabled = true;
-            this.txtPass.Size = new System.Drawing.Size(268, 31);
-            this.txtPass.TabIndex = 1;
-            this.txtPass.UseSelectable = true;
-            this.txtPass.UseSystemPasswordChar = true;
-            this.txtPass.WaterMark = "Password";
-            this.txtPass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtPass.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPass_KeyPress);
             // 
             // picClose
             // 
             this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
-            this.picClose.Location = new System.Drawing.Point(285, 0);
+            this.picClose.Location = new System.Drawing.Point(608, 0);
             this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(39, 59);
+            this.picClose.Size = new System.Drawing.Size(39, 44);
             this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picClose.TabIndex = 1;
             this.picClose.TabStop = false;
@@ -101,38 +78,22 @@
             // 
             this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
-            this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(43, 343);
+            this.btnLogin.Location = new System.Drawing.Point(380, 236);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(268, 31);
+            this.btnLogin.Size = new System.Drawing.Size(232, 43);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // btnCancel
-            // 
-            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(43, 380);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(268, 31);
-            this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(71, 187);
+            this.label2.Location = new System.Drawing.Point(384, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(203, 25);
             this.label2.TabIndex = 5;
@@ -141,7 +102,7 @@
             // llblhelp
             // 
             this.llblhelp.AutoSize = true;
-            this.llblhelp.Location = new System.Drawing.Point(162, 426);
+            this.llblhelp.Location = new System.Drawing.Point(410, 371);
             this.llblhelp.Name = "llblhelp";
             this.llblhelp.Size = new System.Drawing.Size(149, 20);
             this.llblhelp.TabIndex = 4;
@@ -149,74 +110,211 @@
             this.llblhelp.Text = "Reques admin Help";
             this.llblhelp.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(386, 416);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(13)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(26, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(321, 22);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "KhayrMaal Sale and Inventory Log In";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(63, 36);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(260, 20);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Make Sure Your Account Is Secure";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(346, 187);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(29, 24);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 25;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(346, 130);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(29, 24);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 25;
+            this.pictureBox3.TabStop = false;
+            // 
             // txtName
             // 
-            // 
-            // 
-            // 
-            this.txtName.CustomButton.Image = null;
-            this.txtName.CustomButton.Location = new System.Drawing.Point(238, 1);
-            this.txtName.CustomButton.Name = "";
-            this.txtName.CustomButton.Size = new System.Drawing.Size(29, 29);
-            this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtName.CustomButton.TabIndex = 1;
-            this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtName.CustomButton.UseSelectable = true;
-            this.txtName.CustomButton.Visible = false;
-            this.txtName.DisplayIcon = true;
-            this.txtName.Icon = ((System.Drawing.Image)(resources.GetObject("txtName.Icon")));
-            this.txtName.Lines = new string[0];
-            this.txtName.Location = new System.Drawing.Point(43, 247);
-            this.txtName.MaxLength = 32767;
+            this.txtName.BackColor = System.Drawing.Color.White;
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.DimGray;
+            this.txtName.Location = new System.Drawing.Point(381, 138);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.PasswordChar = '\0';
-            this.txtName.PromptText = "Username";
-            this.txtName.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtName.SelectedText = "";
-            this.txtName.SelectionLength = 0;
-            this.txtName.SelectionStart = 0;
-            this.txtName.ShortcutsEnabled = true;
-            this.txtName.Size = new System.Drawing.Size(268, 31);
+            this.txtName.Size = new System.Drawing.Size(207, 18);
             this.txtName.TabIndex = 0;
-            this.txtName.UseSelectable = true;
-            this.txtName.WaterMark = "Username";
-            this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtName.Text = "UserName";
+            this.txtName.Enter += new System.EventHandler(this.txtName_Enter);
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
+            this.txtName.Leave += new System.EventHandler(this.txtName_Leave);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(13)))), ((int)(((byte)(255)))));
+            this.panel1.Location = new System.Drawing.Point(347, 158);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(241, 1);
+            this.panel1.TabIndex = 27;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(13)))), ((int)(((byte)(255)))));
+            this.panel2.Location = new System.Drawing.Point(349, 212);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(241, 1);
+            this.panel2.TabIndex = 28;
+            // 
+            // btnexit
+            // 
+            this.btnexit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnexit.BackColor = System.Drawing.Color.Maroon;
+            this.btnexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnexit.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexit.ForeColor = System.Drawing.Color.White;
+            this.btnexit.Location = new System.Drawing.Point(380, 285);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(232, 43);
+            this.btnexit.TabIndex = 3;
+            this.btnexit.Text = "Exit";
+            this.btnexit.UseVisualStyleBackColor = false;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            // 
+            // txtPass
+            // 
+            this.txtPass.BackColor = System.Drawing.Color.White;
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPass.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPass.Location = new System.Drawing.Point(380, 193);
+            this.txtPass.Multiline = true;
+            this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '●';
+            this.txtPass.Size = new System.Drawing.Size(207, 20);
+            this.txtPass.TabIndex = 1;
+            this.txtPass.Text = "Password";
+            this.txtPass.Enter += new System.EventHandler(this.txtPass_Enter);
+            this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPass_KeyPress);
+            this.txtPass.Leave += new System.EventHandler(this.txtPass_Leave);
+            // 
+            // btnshow
+            // 
+            this.btnshow.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.btnshow.IconColor = System.Drawing.Color.Black;
+            this.btnshow.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnshow.IconSize = 24;
+            this.btnshow.Location = new System.Drawing.Point(564, 186);
+            this.btnshow.Name = "btnshow";
+            this.btnshow.Size = new System.Drawing.Size(26, 26);
+            this.btnshow.TabIndex = 6;
+            this.btnshow.UseVisualStyleBackColor = true;
+            this.btnshow.Click += new System.EventHandler(this.btnshow_Click);
+            // 
+            // btnhide
+            // 
+            this.btnhide.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            this.btnhide.IconColor = System.Drawing.Color.Black;
+            this.btnhide.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnhide.IconSize = 24;
+            this.btnhide.Location = new System.Drawing.Point(563, 186);
+            this.btnhide.Name = "btnhide";
+            this.btnhide.Size = new System.Drawing.Size(26, 26);
+            this.btnhide.TabIndex = 5;
+            this.btnhide.UseVisualStyleBackColor = true;
+            this.btnhide.Click += new System.EventHandler(this.btnhide_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 416);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(647, 23);
+            this.panel3.TabIndex = 30;
             // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(325, 542);
+            this.ClientSize = new System.Drawing.Size(647, 439);
+            this.Controls.Add(this.btnshow);
+            this.Controls.Add(this.btnhide);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtName);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.picClose);
             this.Controls.Add(this.llblhelp);
-            this.Controls.Add(this.txtPass);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnexit);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroTextBox txtPass;
         private System.Windows.Forms.PictureBox picClose;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Button btnLogin;
-        public System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel llblhelp;
-        private MetroFramework.Controls.MetroTextBox txtName;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Button btnexit;
+        private System.Windows.Forms.TextBox txtPass;
+        private FontAwesome.Sharp.IconButton btnshow;
+        private FontAwesome.Sharp.IconButton btnhide;
+        private System.Windows.Forms.Panel panel3;
     }
 }
