@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -57,9 +58,29 @@ namespace sales_and_inventory_management_system
         #region add acount
         private void btnAccSave_Click(object sender, EventArgs e)
         {
+            var password = txtPass.Text;
+            var repassword = txtRePass.Text;
+
             try
             {
-                if (txtPass.Text != txtRePass.Text)
+                //declear hash encryption methode
+                SHA256 sha = SHA256.Create();
+
+                // compute hash
+                byte[] data = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
+                // create string builder
+                StringBuilder sbuilder = new StringBuilder();
+
+                for (int i = 0; i < data.Length; i++)
+                {
+                    sbuilder.Append(data[i].ToString("x2"));
+                }
+
+                // hash password assignment
+
+                var hashedpass = sbuilder.ToString();
+
+                if (password != repassword)
                 {
                     MessageBox.Show("Password did not March!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -67,7 +88,7 @@ namespace sales_and_inventory_management_system
                 cn.Open();
                 cm = new SqlCommand("Insert into tbUser(username, password, role, name) Values (@username, @password, @role, @name)", cn);
                 cm.Parameters.AddWithValue("@username", txtUsername.Text);
-                cm.Parameters.AddWithValue("@password", txtPass.Text);
+                cm.Parameters.AddWithValue("@password", hashedpass);
                 cm.Parameters.AddWithValue("@role", cbRole.Text);
                 cm.Parameters.AddWithValue("@name", txtName.Text);
                 cm.ExecuteNonQuery();
@@ -78,10 +99,9 @@ namespace sales_and_inventory_management_system
             }
             catch (Exception ex)
             {
-
+                cn.Close();
                 MessageBox.Show(ex.Message, "Warning");
             }
-
         }
 
 
@@ -97,20 +117,62 @@ namespace sales_and_inventory_management_system
 
         private void btnPassSave_Click(object sender, EventArgs e)
         {
+            var carentpassword = txtCurPass.Text;
+            var mainpass = main._pass;
+            var curentpass = txtCurPass.Text;
+            var password = txtNPass.Text;
+            var repassword = txtRePass2.Text;
+           
             try
             {
-                if (txtCurPass.Text != main._pass)
+                //declear hash encryption methode
+                SHA256 shaa = SHA256.Create();
+
+                // compute hash
+                byte[] dataa = shaa.ComputeHash(Encoding.UTF8.GetBytes(curentpass));
+                // create string builder
+                StringBuilder cbuilder = new StringBuilder();
+
+                for (int i = 0; i < dataa.Length; i++)
+                {
+                    cbuilder.Append(dataa[i].ToString("x2"));
+                }
+
+                // hash password assignment
+
+                var chashedpass = cbuilder.ToString();
+                if (mainpass != chashedpass)
                 {
                     MessageBox.Show("Current password did not martch!", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
+                             
+
+
+
                 if (txtNPass.Text != txtRePass2.Text)
                 {
                     MessageBox.Show("Confirm new password did not martch!", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
+                //declear hash encryption methode
+                SHA256 sha = SHA256.Create();
 
-                dbcon.ExecuteQuery("UPDATE tbUser SET password= '" + txtNPass.Text + "' WHERE username='" + lblUsername.Text + "'");
+                // compute hash
+                byte[] data = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
+                // create string builder
+                StringBuilder sbuilder = new StringBuilder();
+
+                for (int i = 0; i < data.Length; i++)
+                {
+                    sbuilder.Append(data[i].ToString("x2"));
+                }
+
+                // hash password assignment
+
+                var hashedpass = sbuilder.ToString();
+
+                dbcon.ExecuteQuery("UPDATE tbUser SET password= '" + hashedpass + "' WHERE username='" + lblUsername.Text + "'");
                 MessageBox.Show("Password has been succefully changed!", "Changed Password", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearCP();
             }

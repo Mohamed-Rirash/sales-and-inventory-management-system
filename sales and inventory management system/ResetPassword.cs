@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -32,16 +33,35 @@ namespace sales_and_inventory_management_system
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            if (txtNpass.Text != txtResPass.Text)
+            var password = txtNpass.Text;
+            var repassword = txtResPass.Text;
+            //declear hash encryption methode
+            SHA256 sha = SHA256.Create();
+
+            // compute hash
+            byte[] data = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
+            // create string builder
+            StringBuilder sbuilder = new StringBuilder();
+
+            for (int i = 0; i < data.Length; i++)
+            {
+                sbuilder.Append(data[i].ToString("x2"));
+            }
+
+            // hash password assignment
+
+            var hashedpass = sbuilder.ToString();
+            if (password != repassword)
             {
                 MessageBox.Show("The password you typed do not match. Type the password for this account in both text boxes.", "Add User Wizard", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else
             {
+
                 if (MessageBox.Show("Reset password?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    dbcon.ExecuteQuery("UPDATE tbUser SET password = '" + txtNpass.Text + "'WHERE username = '" + user.username + "'");
+                    dbcon.ExecuteQuery("UPDATE tbUser SET password = '" + hashedpass + "'WHERE username = '" + user.username + "'");
                     MessageBox.Show("Password has been successfully reset", "Reset Password", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Dispose();
                 }

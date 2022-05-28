@@ -183,5 +183,4 @@ E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-managem
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.exe.config
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.customerName.resources
