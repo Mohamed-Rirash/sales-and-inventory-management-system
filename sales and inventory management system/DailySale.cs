@@ -113,5 +113,21 @@ namespace sales_and_inventory_management_system
         {
             this.Dispose();
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            SalesReport report = new SalesReport();
+            string param = "Date From: " + dtFrom.Value.ToShortDateString() + " To: " + dtTo.Value.ToShortDateString();
+
+            if (cboCashier.Text == "All Cashier")
+            {
+                report.LoadDailyReport("select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc as discount, c.total from tbCart as c inner join tbProduct as p on c.pcode = p.pcode where status like 'Sold' and sdate between '" + dtFrom.Value + "' and '" + dtTo.Value + "'", param, cboCashier.Text);
+            }
+            else
+            {
+                report.LoadDailyReport("select c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc as discount, c.total from tbCart as c inner join tbProduct as p on c.pcode = p.pcode where status like 'Sold' and sdate between '" + dtFrom.Value + "' and '" + dtTo.Value + "' and cashier like '" + cboCashier.Text + "'", param, cboCashier.Text);
+            }
+            report.ShowDialog();
+        }
     }
 }

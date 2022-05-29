@@ -184,3 +184,102 @@ E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-managem
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.customerName.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\sales and inventory management system.exe.config
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\sales and inventory management system.exe
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\sales and inventory management system.pdb
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\FluentValidation.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\MetroFramework.Design.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\MetroFramework.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\EnvDTE.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\stdole.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\FluentValidation.xml
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\EnvDTE.xml
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.AssemblyReference.cache
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.SuggestedBindingRedirects.cache
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Brand.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.BrandModule.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.CancelOrder.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Cashier.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Category.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.CategoryModule.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.ChangePassword.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.customerName.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.DailySale.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Discount.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Login.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.LookUpProduct.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.mainform.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Product.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.ProductModule.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.ProductStockIn.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Properties.Resources.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Qty.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Recept.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.ResetPassword.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Settle_Payment.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.StockIn.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Store.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.UserAccount.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.UserProperties.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Vendor.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Vendormodule.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Void.resources
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.GenerateResource.cache
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.CoreCompileInputs.cache
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.csproj.CopyComplete
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.exe
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.pdb
+C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.SalesReport.resources

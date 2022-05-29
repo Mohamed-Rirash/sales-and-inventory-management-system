@@ -247,6 +247,12 @@
     <Compile Include="ResetPassword.Designer.cs">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="SalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesReport.Designer.cs">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settle_Payment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -363,6 +369,10 @@
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rptRecept.rdlc" />
+    <EmbeddedResource Include="rptSoldReport.rdlc" />
+    <EmbeddedResource Include="SalesReport.resx">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settle_Payment.resx">
       <DependentUpon>Settle_Payment.cs</DependentUpon>
     </EmbeddedResource>

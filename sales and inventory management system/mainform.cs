@@ -395,6 +395,7 @@ namespace sales_and_inventory_management_system
         private void btnSaleHist_Click(object sender, EventArgs e)
         {
             hideSubmenu();
+            openChildForm(new DailySale(this));
         }
 
         private void btnRecord_Click(object sender, EventArgs e)
