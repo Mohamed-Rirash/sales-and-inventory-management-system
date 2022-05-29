@@ -28,13 +28,6 @@ namespace sales_and_inventory_management_system
 
 
 
-        private void txtname_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
-       
-            
-        }
-
         
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -42,7 +35,7 @@ namespace sales_and_inventory_management_system
             this.Dispose();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnok_Click(object sender, EventArgs e)
         {
             string NamePattern = @"^[a-z A-Z]+$";
 
@@ -50,6 +43,7 @@ namespace sales_and_inventory_management_system
             {
                 txtname.Focus();
                 MessageBox.Show("Please Enter Customer Name!");
+
             }
             else if (Regex.IsMatch(txtname.Text, NamePattern) == false)
             {
@@ -59,13 +53,13 @@ namespace sales_and_inventory_management_system
                 return;
             }
             else
-            {               
-                    if (cashier.lblcustomername.Text == String.Empty)
-                    {
-                        TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
-                        cashier.lblcustomername.Text = textInfo.ToTitleCase(txtname.Text);
-                        this.Dispose();
-                    }
+            {
+                if (cashier.lblcustomername.Text == String.Empty)
+                {
+                    TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+                    cashier.lblcustomername.Text = textInfo.ToTitleCase(txtname.Text);
+                    this.Dispose();
+                }
             }
         }
     }

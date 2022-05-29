@@ -96,6 +96,15 @@ namespace sales_and_inventory_management_system
         private void btnClear_Click(object sender, EventArgs e)
         {
             slide(btnClear);
+            if (MessageBox.Show("Remove all items from cart?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                cn.Open();
+                cm = new SqlCommand("Delete from tbCart where transno like'" + lblTranNo.Text + "'", cn);
+                cm.ExecuteNonQuery();
+                cn.Close();
+                MessageBox.Show("All items has been successfully remove", "Remove item", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadCart();
+            }
 
         }
 
@@ -399,6 +408,11 @@ namespace sales_and_inventory_management_system
                     return;
                 }
             }
+        }
+
+        private void lblDisplayTotal_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

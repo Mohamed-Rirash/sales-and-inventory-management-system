@@ -26,7 +26,7 @@ namespace sales_and_inventory_management_system
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
-            txtName.Focus();
+            
         }
 
         private void picClose_Click(object sender, EventArgs e)

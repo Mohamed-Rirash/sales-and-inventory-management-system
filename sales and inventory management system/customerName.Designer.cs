@@ -33,7 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnok = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +48,6 @@
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(344, 22);
             this.txtname.TabIndex = 0;
-            this.txtname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtname_KeyPress);
             // 
             // panel1
             // 
@@ -82,22 +81,29 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button1
+            // btnok
             // 
-            this.button1.Location = new System.Drawing.Point(122, 78);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnok.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnok.ForeColor = System.Drawing.Color.Black;
+            this.btnok.IconChar = FontAwesome.Sharp.IconChar.CheckDouble;
+            this.btnok.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnok.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnok.IconSize = 40;
+            this.btnok.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnok.Location = new System.Drawing.Point(103, 90);
+            this.btnok.Name = "btnok";
+            this.btnok.Size = new System.Drawing.Size(97, 42);
+            this.btnok.TabIndex = 2;
+            this.btnok.Text = "   Ok";
+            this.btnok.UseVisualStyleBackColor = true;
+            this.btnok.Click += new System.EventHandler(this.btnok_Click);
             // 
             // customerName
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 134);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnok);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,6 +127,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private FontAwesome.Sharp.IconButton btnok;
     }
 }
