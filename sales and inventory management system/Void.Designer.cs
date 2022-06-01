@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Void));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.picClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.picClose = new System.Windows.Forms.PictureBox();
             this.txtPass = new MetroFramework.Controls.MetroTextBox();
             this.txtUsername = new MetroFramework.Controls.MetroTextBox();
             this.btnVoid = new System.Windows.Forms.Button();
@@ -41,7 +41,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(71)))), ((int)(((byte)(232)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(111)))), ((int)(((byte)(61)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.picClose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -49,17 +49,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(410, 50);
             this.panel1.TabIndex = 14;
-            // 
-            // picClose
-            // 
-            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
-            this.picClose.Location = new System.Drawing.Point(381, 0);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(30, 35);
-            this.picClose.TabIndex = 1;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // label1
             // 
@@ -71,6 +60,17 @@
             this.label1.Size = new System.Drawing.Size(149, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Void Cancel Order";
+            // 
+            // picClose
+            // 
+            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
+            this.picClose.Location = new System.Drawing.Point(381, 0);
+            this.picClose.Name = "picClose";
+            this.picClose.Size = new System.Drawing.Size(30, 35);
+            this.picClose.TabIndex = 1;
+            this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // txtPass
             // 

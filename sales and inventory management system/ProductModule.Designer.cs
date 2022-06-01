@@ -182,6 +182,7 @@
             this.label3.Size = new System.Drawing.Size(72, 18);
             this.label3.TabIndex = 23;
             this.label3.Text = "Barcode :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtPdesc
             // 
@@ -190,6 +191,7 @@
             this.txtPdesc.Name = "txtPdesc";
             this.txtPdesc.Size = new System.Drawing.Size(314, 70);
             this.txtPdesc.TabIndex = 20;
+            this.txtPdesc.TextChanged += new System.EventHandler(this.txtPdesc_TextChanged);
             // 
             // txtBarcode
             // 
@@ -197,6 +199,7 @@
             this.txtBarcode.Name = "txtBarcode";
             this.txtBarcode.Size = new System.Drawing.Size(247, 24);
             this.txtBarcode.TabIndex = 19;
+            this.txtBarcode.TextChanged += new System.EventHandler(this.txtBarcode_TextChanged);
             // 
             // txtPcode
             // 
@@ -204,10 +207,11 @@
             this.txtPcode.Name = "txtPcode";
             this.txtPcode.Size = new System.Drawing.Size(247, 24);
             this.txtPcode.TabIndex = 18;
+            this.txtPcode.TextChanged += new System.EventHandler(this.txtPcode_TextChanged);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(90)))), ((int)(((byte)(160)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(111)))), ((int)(((byte)(61)))));
             this.panel1.Controls.Add(this.picClose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -246,6 +250,7 @@
             this.label4.Size = new System.Drawing.Size(91, 18);
             this.label4.TabIndex = 28;
             this.label4.Text = "Description :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
@@ -255,6 +260,7 @@
             this.label2.Size = new System.Drawing.Size(108, 18);
             this.label2.TabIndex = 26;
             this.label2.Text = "Product Code :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtPrice
             // 

@@ -126,6 +126,8 @@ namespace sales_and_inventory_management_system
         private void btncustomers_Click(object sender, EventArgs e)
         {
             slide(btncustomers);
+            Customers customer = new Customers();
+            customer.ShowDialog();
 
 
         }

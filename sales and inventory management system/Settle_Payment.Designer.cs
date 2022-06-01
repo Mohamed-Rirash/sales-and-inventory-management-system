@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settle_Payment));
             this.panelhead = new System.Windows.Forms.Panel();
+            this.picClose = new System.Windows.Forms.PictureBox();
             this.btnDZero = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
@@ -48,14 +49,13 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnEight = new System.Windows.Forms.Button();
             this.txtSale = new System.Windows.Forms.TextBox();
-            this.picClose = new System.Windows.Forms.PictureBox();
             this.panelhead.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
             // 
             // panelhead
             // 
-            this.panelhead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(71)))), ((int)(((byte)(232)))));
+            this.panelhead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(111)))), ((int)(((byte)(61)))));
             this.panelhead.Controls.Add(this.picClose);
             this.panelhead.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelhead.Location = new System.Drawing.Point(0, 0);
@@ -63,9 +63,20 @@
             this.panelhead.Size = new System.Drawing.Size(250, 31);
             this.panelhead.TabIndex = 0;
             // 
+            // picClose
+            // 
+            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
+            this.picClose.Location = new System.Drawing.Point(220, 0);
+            this.picClose.Name = "picClose";
+            this.picClose.Size = new System.Drawing.Size(30, 35);
+            this.picClose.TabIndex = 2;
+            this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
+            // 
             // btnDZero
             // 
-            this.btnDZero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnDZero.BackColor = System.Drawing.Color.SeaGreen;
             this.btnDZero.ForeColor = System.Drawing.Color.White;
             this.btnDZero.Location = new System.Drawing.Point(180, 267);
             this.btnDZero.Name = "btnDZero";
@@ -77,7 +88,7 @@
             // 
             // btnZero
             // 
-            this.btnZero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnZero.BackColor = System.Drawing.Color.SeaGreen;
             this.btnZero.ForeColor = System.Drawing.Color.White;
             this.btnZero.Location = new System.Drawing.Point(180, 211);
             this.btnZero.Name = "btnZero";
@@ -89,7 +100,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnClear.BackColor = System.Drawing.Color.SeaGreen;
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Location = new System.Drawing.Point(180, 155);
             this.btnClear.Name = "btnClear";
@@ -101,7 +112,7 @@
             // 
             // btnThree
             // 
-            this.btnThree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnThree.BackColor = System.Drawing.Color.SeaGreen;
             this.btnThree.ForeColor = System.Drawing.Color.White;
             this.btnThree.Location = new System.Drawing.Point(124, 267);
             this.btnThree.Name = "btnThree";
@@ -113,7 +124,7 @@
             // 
             // btnSix
             // 
-            this.btnSix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnSix.BackColor = System.Drawing.Color.SeaGreen;
             this.btnSix.ForeColor = System.Drawing.Color.White;
             this.btnSix.Location = new System.Drawing.Point(124, 211);
             this.btnSix.Name = "btnSix";
@@ -125,7 +136,7 @@
             // 
             // btnNine
             // 
-            this.btnNine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnNine.BackColor = System.Drawing.Color.SeaGreen;
             this.btnNine.ForeColor = System.Drawing.Color.White;
             this.btnNine.Location = new System.Drawing.Point(124, 155);
             this.btnNine.Name = "btnNine";
@@ -137,7 +148,7 @@
             // 
             // btnTwo
             // 
-            this.btnTwo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnTwo.BackColor = System.Drawing.Color.SeaGreen;
             this.btnTwo.ForeColor = System.Drawing.Color.White;
             this.btnTwo.Location = new System.Drawing.Point(68, 267);
             this.btnTwo.Name = "btnTwo";
@@ -149,7 +160,7 @@
             // 
             // btnEnter
             // 
-            this.btnEnter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnEnter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(111)))), ((int)(((byte)(61)))));
             this.btnEnter.ForeColor = System.Drawing.Color.White;
             this.btnEnter.Location = new System.Drawing.Point(12, 323);
             this.btnEnter.Name = "btnEnter";
@@ -161,7 +172,7 @@
             // 
             // btnOne
             // 
-            this.btnOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnOne.BackColor = System.Drawing.Color.SeaGreen;
             this.btnOne.ForeColor = System.Drawing.Color.White;
             this.btnOne.Location = new System.Drawing.Point(12, 267);
             this.btnOne.Name = "btnOne";
@@ -173,7 +184,7 @@
             // 
             // btnFive
             // 
-            this.btnFive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnFive.BackColor = System.Drawing.Color.SeaGreen;
             this.btnFive.ForeColor = System.Drawing.Color.White;
             this.btnFive.Location = new System.Drawing.Point(68, 211);
             this.btnFive.Name = "btnFive";
@@ -185,7 +196,7 @@
             // 
             // btnFour
             // 
-            this.btnFour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnFour.BackColor = System.Drawing.Color.SeaGreen;
             this.btnFour.ForeColor = System.Drawing.Color.White;
             this.btnFour.Location = new System.Drawing.Point(12, 211);
             this.btnFour.Name = "btnFour";
@@ -197,7 +208,7 @@
             // 
             // btnSeven
             // 
-            this.btnSeven.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnSeven.BackColor = System.Drawing.Color.SeaGreen;
             this.btnSeven.ForeColor = System.Drawing.Color.White;
             this.btnSeven.Location = new System.Drawing.Point(12, 155);
             this.btnSeven.Name = "btnSeven";
@@ -234,7 +245,7 @@
             // 
             // btnEight
             // 
-            this.btnEight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
+            this.btnEight.BackColor = System.Drawing.Color.SeaGreen;
             this.btnEight.ForeColor = System.Drawing.Color.White;
             this.btnEight.Location = new System.Drawing.Point(68, 155);
             this.btnEight.Name = "btnEight";
@@ -253,17 +264,6 @@
             this.txtSale.Name = "txtSale";
             this.txtSale.Size = new System.Drawing.Size(217, 26);
             this.txtSale.TabIndex = 3;
-            // 
-            // picClose
-            // 
-            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
-            this.picClose.Location = new System.Drawing.Point(220, 0);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(30, 35);
-            this.picClose.TabIndex = 2;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // Settle_Payment
             // 

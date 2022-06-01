@@ -249,5 +249,35 @@ namespace sales_and_inventory_management_system
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
                 e.Handled = true;
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPdesc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBarcode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPcode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

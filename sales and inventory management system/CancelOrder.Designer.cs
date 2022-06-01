@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CancelOrder));
             System.Windows.Forms.Panel panel1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CancelOrder));
             this.label1 = new System.Windows.Forms.Label();
+            this.picClose = new System.Windows.Forms.PictureBox();
             this.udCancelQty = new System.Windows.Forms.NumericUpDown();
             this.btnCOrder = new System.Windows.Forms.Button();
             this.txtReason = new System.Windows.Forms.TextBox();
@@ -43,7 +44,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
-            this.picClose = new System.Windows.Forms.PictureBox();
             this.txtDisc = new System.Windows.Forms.TextBox();
             this.txtQty = new System.Windows.Forms.TextBox();
             this.txtDesc = new System.Windows.Forms.TextBox();
@@ -61,10 +61,21 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.udCancelQty)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.udCancelQty)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(111)))), ((int)(((byte)(61)))));
+            panel1.Controls.Add(this.label1);
+            panel1.Controls.Add(this.picClose);
+            panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            panel1.Location = new System.Drawing.Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(894, 50);
+            panel1.TabIndex = 25;
             // 
             // label1
             // 
@@ -76,6 +87,17 @@
             this.label1.Size = new System.Drawing.Size(158, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cancel Order Detail";
+            // 
+            // picClose
+            // 
+            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
+            this.picClose.Location = new System.Drawing.Point(865, 0);
+            this.picClose.Name = "picClose";
+            this.picClose.Size = new System.Drawing.Size(30, 35);
+            this.picClose.TabIndex = 1;
+            this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // udCancelQty
             // 
@@ -193,17 +215,6 @@
             this.txtTotal.Size = new System.Drawing.Size(316, 26);
             this.txtTotal.TabIndex = 41;
             this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // picClose
-            // 
-            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
-            this.picClose.Location = new System.Drawing.Point(865, 0);
-            this.picClose.Name = "picClose";
-            this.picClose.Size = new System.Drawing.Size(30, 35);
-            this.picClose.TabIndex = 1;
-            this.picClose.TabStop = false;
-            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // txtDisc
             // 
@@ -347,17 +358,6 @@
             this.label2.TabIndex = 34;
             this.label2.Text = "Id :";
             // 
-            // panel1
-            // 
-            panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(71)))), ((int)(((byte)(232)))));
-            panel1.Controls.Add(this.label1);
-            panel1.Controls.Add(this.picClose);
-            panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            panel1.Location = new System.Drawing.Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(894, 50);
-            panel1.TabIndex = 25;
-            // 
             // CancelOrder
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -397,10 +397,10 @@
             this.Name = "CancelOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CancelOrder";
-            ((System.ComponentModel.ISupportInitialize)(this.udCancelQty)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.udCancelQty)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

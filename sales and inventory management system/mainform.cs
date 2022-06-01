@@ -175,7 +175,7 @@ namespace sales_and_inventory_management_system
 
         private void CollapseMenu()
         {
-            if (this.panelMenu.Width > 200) //Collapse menu
+            if (this.panelMenu.Width > 100) //Collapse menu
             {
                 panelMenu.Width = 100;
                 pictureBox1.Visible = false;
@@ -211,7 +211,7 @@ namespace sales_and_inventory_management_system
             }
             else
             { //Expand menu
-                panelMenu.Width = 230;
+                panelMenu.Width = 200;
                 pictureBox1.Visible = true;
                 btnMenu.Dock = DockStyle.None;
                 lblRole.Visible = true;
@@ -338,34 +338,42 @@ namespace sales_and_inventory_management_system
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             hideSubmenu();
+            this.active.Location = new Point(btnDashboard.Location.X, btnDashboard.Location.Y);
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
             showSubmenu(panelSubProduct);
+            this.active.Location = new Point(btnProduct.Location.X, btnProduct.Location.Y);
+
         }
 
         private void btnProductList_Click(object sender, EventArgs e)
         {
             openChildForm(new Product());
             hideSubmenu();
+
         }
 
         private void btnCategory_Click(object sender, EventArgs e)
         {
             openChildForm(new Category());
             hideSubmenu();
+
         }
 
         private void btnBrand_Click(object sender, EventArgs e)
         {
             openChildForm(new Brand());
             hideSubmenu();
+
         }
 
         private void btnInStock_Click(object sender, EventArgs e)
         {
             showSubmenu(panelSubStock);
+            this.active.Location = new Point(btnInStock.Location.X, btnInStock.Location.Y);
+
         }
 
         private void btnStore_Click(object sender, EventArgs e)
@@ -373,17 +381,21 @@ namespace sales_and_inventory_management_system
             hideSubmenu();
             Store store = new Store();
             store.ShowDialog();
+
         }
 
         private void btnUser_Click(object sender, EventArgs e)
         {
             openChildForm(new UserAccount(this));
             hideSubmenu();
+
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
             showSubmenu(panelSubSetting);
+            this.active.Location = new Point(btnSetting.Location.X, btnSetting.Location.Y);
+
         }
 
         private void btnPosRecord_Click(object sender, EventArgs e)
@@ -396,32 +408,40 @@ namespace sales_and_inventory_management_system
         {
             hideSubmenu();
             openChildForm(new DailySale(this));
+
         }
 
         private void btnRecord_Click(object sender, EventArgs e)
         {
             showSubmenu(panelSubRecord);
+            this.active.Location = new Point(btnRecord.Location.X, btnRecord.Location.Y);
+
         }
 
         private void btnSupplier_Click(object sender, EventArgs e)
         {
             openChildForm(new Vendor());
             hideSubmenu();
+            this.active.Location = new Point(btnSupplier.Location.X, btnSupplier.Location.Y);
+
         }
 
         private void btnStockAdjustment_Click(object sender, EventArgs e)
         {
             hideSubmenu();
+
         }
 
         private void btnStockEntry_Click(object sender, EventArgs e)
         {
             openChildForm(new StockIn(this));
             hideSubmenu();
+
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+
             hideSubmenu();
             if (MessageBox.Show("Logout Application?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {

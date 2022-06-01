@@ -170,6 +170,18 @@
     <Compile Include="customerName.Designer.cs">
       <DependentUpon>customerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumerModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustumerModule.Designer.cs">
+      <DependentUpon>CustumerModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="DailySale.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -325,6 +337,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="customerName.resx">
       <DependentUpon>customerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustumerModule.resx">
+      <DependentUpon>CustumerModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DailySale.resx">
       <DependentUpon>DailySale.cs</DependentUpon>

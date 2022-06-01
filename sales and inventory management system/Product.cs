@@ -77,7 +77,7 @@ namespace sales_and_inventory_management_system
             }
             catch (Exception ex)
             {
-
+                cn.Close();
                 MessageBox.Show(ex.Message);
             }
         }

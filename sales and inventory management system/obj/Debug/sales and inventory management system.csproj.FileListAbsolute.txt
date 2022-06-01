@@ -283,3 +283,6 @@ C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\s
 C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.exe
 C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.pdb
 C:\Users\Rirash\Desktop\clone\New folder\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.SalesReport.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.SalesReport.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Customers.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.CustumerModule.resources
