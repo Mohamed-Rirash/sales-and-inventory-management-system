@@ -107,7 +107,29 @@ namespace sales_and_inventory_management_system
                     
                     Depts debt = new Depts();
                     debt.ShowDialog();
-                   
+
+                    for (int i = 0; i < cashier.dgvCash.Rows.Count; i++)
+                    {
+                        cn.Open();
+                        cm = new SqlCommand("UPDATE tbProduct SET qty = qty - " + int.Parse(cashier.dgvCash.Rows[i].Cells[5].Value.ToString()) + "WHERE pcode= '" + cashier.dgvCash.Rows[i].Cells[2].Value.ToString() + "'", cn);
+                        cm.ExecuteNonQuery();
+                        cn.Close();
+
+                        cn.Open();
+                        cm = new SqlCommand("UPDATE tbCart SET status = 'Loan' WHERE id= '" + cashier.dgvCash.Rows[i].Cells[1].Value.ToString() + "'", cn);
+                        cm.ExecuteNonQuery();
+                        cn.Close();
+                    }
+
+                    Loanrecept recept = new Loanrecept(cashier);
+                    recept.LoadRecept(txtCash.Text, txtChange.Text);
+                    recept.ShowDialog();
+
+                    MessageBox.Show("Payment successfully saved!", "Payment", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cashier.GetTranNo();
+                    cashier.LoadCart();
+                    this.Dispose();
+
                 }
                 else
                 {

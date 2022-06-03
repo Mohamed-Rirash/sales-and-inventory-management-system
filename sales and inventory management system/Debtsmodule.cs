@@ -98,14 +98,9 @@ namespace sales_and_inventory_management_system
                             cm.ExecuteNonQuery();
                             cn.Close();
                         }
-                        Loanrecept recept = new Loanrecept(cashier);
-                        recept.LoadRecept(settle.txtCash.Text, settle.txtChange.Text);
-                        recept.ShowDialog();
-
-                        MessageBox.Show("Payment successfully saved!", "Payment", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        cashier.GetTranNo();
-                        cashier.LoadCart();
                         this.Dispose();
+                        debts.Dispose();
+                        settle.BringToFront();
                     }
 
                 }
