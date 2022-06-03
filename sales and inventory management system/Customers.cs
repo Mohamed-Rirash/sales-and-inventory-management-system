@@ -27,14 +27,14 @@ namespace sales_and_inventory_management_system
         public void Loadcustomers()
         {
             int i = 0;
-            dgvcustomers.Rows.Clear();
+            dgvCustomers.Rows.Clear();
             cm = new SqlCommand("SELECT CustomerName, CustomerType, Address, Phone FROM tbCustomers  WHERE CONCAT(CustomerName, CustomerType, Address, Phone ) LIKE '%" + txtSearch.Text + "%'", cn);
             cn.Open();
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
                 i++;
-                dgvcustomers.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString());
+                dgvCustomers.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString());
             }
             dr.Close();
             cn.Close();
@@ -44,14 +44,14 @@ namespace sales_and_inventory_management_system
         {
             try
             {
-                string colName = dgvcustomers.Columns[e.ColumnIndex].Name;
+                string colName = dgvCustomers.Columns[e.ColumnIndex].Name;
                 if (colName == "Edit")
                 {
                     CustumerModule customer = new CustumerModule(this);
-                    customer.txtcustomerName.Text = dgvcustomers.Rows[e.RowIndex].Cells[1].Value.ToString();
-                    customer.cmbcustomertype.Text = dgvcustomers.Rows[e.RowIndex].Cells[2].Value.ToString();
-                    customer.txtaddress.Text = dgvcustomers.Rows[e.RowIndex].Cells[3].Value.ToString();
-                    customer.txtPhone.Text = dgvcustomers.Rows[e.RowIndex].Cells[4].Value.ToString();
+                    customer.txtcustomerName.Text = dgvCustomers.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    customer.cmbcustomertype.Text = dgvCustomers.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    customer.txtaddress.Text = dgvCustomers.Rows[e.RowIndex].Cells[3].Value.ToString();
+                    customer.txtPhone.Text = dgvCustomers.Rows[e.RowIndex].Cells[4].Value.ToString();
 
                    
                     customer.btnSave.Enabled = false;
@@ -63,7 +63,7 @@ namespace sales_and_inventory_management_system
                     if (MessageBox.Show("Are you sure you want to delete this record?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         cn.Open();
-                        cm = new SqlCommand("DELETE FROM tbCustomers WHERE phone LIKE '" + dgvcustomers[4, e.RowIndex].Value.ToString() + "'", cn);
+                        cm = new SqlCommand("DELETE FROM tbCustomers WHERE phone LIKE '" + dgvCustomers[4, e.RowIndex].Value.ToString() + "'", cn);
                         cm.ExecuteNonQuery();
                         cn.Close();
                         MessageBox.Show("Product has been successfully deleted.", "SIM", MessageBoxButtons.OK, MessageBoxIcon.Information);

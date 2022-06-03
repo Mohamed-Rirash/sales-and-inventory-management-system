@@ -17,12 +17,14 @@ namespace sales_and_inventory_management_system
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
         Cashier cashier;
+        
         public Settle_Payment(Cashier cash)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
             this.KeyPreview = true;
             cashier = cash;
+           
         }
 
         private void picClose_Click(object sender, EventArgs e)
@@ -97,12 +99,15 @@ namespace sales_and_inventory_management_system
         {
             try
             {
-
+               
 
                 if ((double.Parse(txtChange.Text) < 0) || (txtCash.Text.Equals("")))
                 {
-                    MessageBox.Show("Insufficient amount, Please enter the corret amount!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    MessageBox.Show("Insufficient amount, Please enter the corret amount! do you want TO Take as a Loan", "Warning", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                    
+                    Depts debt = new Depts();
+                    debt.ShowDialog();
+                   
                 }
                 else
                 {
@@ -143,11 +148,14 @@ namespace sales_and_inventory_management_system
 
         private void txtCash_TextChanged(object sender, EventArgs e)
         {
+            Debtsmodule debtsmodule = new Debtsmodule(new Depts());
             try
             {
                 double sale = double.Parse(txtSale.Text);
                 double cash = double.Parse(txtCash.Text);
                 double charge = cash - sale;
+               
+
                 txtChange.Text = charge.ToString("#,##0.00");
             }
             catch (Exception)
@@ -156,5 +164,9 @@ namespace sales_and_inventory_management_system
                 cn.Close();
             }
         }
+
+       
+       
+       
     }
 }

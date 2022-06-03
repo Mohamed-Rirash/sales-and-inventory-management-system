@@ -49,6 +49,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnEight = new System.Windows.Forms.Button();
             this.txtSale = new System.Windows.Forms.TextBox();
+            this.lbldayn = new System.Windows.Forms.TextBox();
             this.panelhead.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
@@ -265,10 +266,18 @@
             this.txtSale.Size = new System.Drawing.Size(217, 26);
             this.txtSale.TabIndex = 3;
             // 
+            // lbldayn
+            // 
+            this.lbldayn.Location = new System.Drawing.Point(235, 123);
+            this.lbldayn.Name = "lbldayn";
+            this.lbldayn.Size = new System.Drawing.Size(15, 26);
+            this.lbldayn.TabIndex = 20;
+            // 
             // Settle_Payment
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(250, 392);
+            this.Controls.Add(this.lbldayn);
             this.Controls.Add(this.btnDZero);
             this.Controls.Add(this.btnZero);
             this.Controls.Add(this.btnClear);
@@ -316,11 +325,12 @@
         private System.Windows.Forms.Button btnFive;
         private System.Windows.Forms.Button btnFour;
         private System.Windows.Forms.Button btnSeven;
-        private System.Windows.Forms.TextBox txtChange;
-        private System.Windows.Forms.TextBox txtCash;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button btnEight;
         public System.Windows.Forms.TextBox txtSale;
         private System.Windows.Forms.PictureBox picClose;
+        public System.Windows.Forms.TextBox txtChange;
+        public System.Windows.Forms.TextBox lbldayn;
+        public System.Windows.Forms.TextBox txtCash;
     }
 }

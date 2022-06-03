@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace sales_and_inventory_management_system
 {
-    public partial class Recept : Form
+    public partial class Loanrecept : Form
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
@@ -21,13 +21,16 @@ namespace sales_and_inventory_management_system
         string store;
         string address;
         Cashier cashier;
-        public Recept(Cashier cash)
+
+        public Loanrecept(Cashier cash)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
             cashier = cash;
             LoadStore();
         }
+       
+
         public void LoadStore()
         {
             cn.Open();
@@ -43,17 +46,18 @@ namespace sales_and_inventory_management_system
             cn.Close();
         }
 
-        private void Recept_Load(object sender, EventArgs e)
+        private void Loanrecept_Load(object sender, EventArgs e)
         {
-            this.reportViewer1.RefreshReport();
+
             this.reportViewer1.RefreshReport();
         }
-        public void LoadRecept(string pcash, string pchange)
+
+        public void LoadRecept(string pcash,  string pchange)
         {
             ReportDataSource rptDataSourece;
             try
             {
-                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptRecept.rdlc";
+                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptloan.rdlc";
                 this.reportViewer1.LocalReport.DataSources.Clear();
 
                 DataSet1 ds = new DataSet1();
@@ -68,8 +72,8 @@ namespace sales_and_inventory_management_system
                 ReportParameter pVat = new ReportParameter("pVat", cashier.lblVat.Text);
                 ReportParameter pDiscount = new ReportParameter("pDiscount", cashier.lblDiscount.Text);
                 ReportParameter pTotal = new ReportParameter("pTotal", cashier.lblDisplayTotal.Text);
-                ReportParameter pCash = new ReportParameter("pCash", pcash);
-                ReportParameter pChange = new ReportParameter("pChange", pchange);
+                ReportParameter pCash = new ReportParameter("pCash",pcash );
+              //  ReportParameter pChange = new ReportParameter("pChange", pchange);
                 ReportParameter pStore = new ReportParameter("pStore", store);
                 ReportParameter pAddress = new ReportParameter("pAddress", address);
                 ReportParameter pTransaction = new ReportParameter("pTransaction", "Invoice #: " + cashier.lblTranNo.Text);
@@ -81,7 +85,7 @@ namespace sales_and_inventory_management_system
                 reportViewer1.LocalReport.SetParameters(pDiscount);
                 reportViewer1.LocalReport.SetParameters(pTotal);
                 reportViewer1.LocalReport.SetParameters(pCash);
-                reportViewer1.LocalReport.SetParameters(pChange);
+               // reportViewer1.LocalReport.SetParameters(pChange);
                 reportViewer1.LocalReport.SetParameters(pStore);
                 reportViewer1.LocalReport.SetParameters(pAddress);
                 reportViewer1.LocalReport.SetParameters(pTransaction);
@@ -103,14 +107,6 @@ namespace sales_and_inventory_management_system
                 MessageBox.Show(ex.Message);
             }
 
-        } 
-
-        private void Recept_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-            {
-                this.Dispose();
-            }
         }
     }
 }

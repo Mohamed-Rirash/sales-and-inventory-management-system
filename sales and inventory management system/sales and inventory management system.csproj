@@ -196,11 +196,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Debtsmodule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Debtsmodule.Designer.cs">
+      <DependentUpon>Debtsmodule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depts.Designer.cs">
+      <DependentUpon>Depts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Discount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Discount.Designer.cs">
       <DependentUpon>Discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loanrecept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loanrecept.Designer.cs">
+      <DependentUpon>Loanrecept.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -221,6 +239,12 @@
       <DependentUpon>mainform.cs</DependentUpon>
     </Compile>
     <Compile Include="DBConnect.cs" />
+    <Compile Include="personal cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personal cart.Designer.cs">
+      <DependentUpon>personal cart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -347,8 +371,17 @@
     <EmbeddedResource Include="DailySale.resx">
       <DependentUpon>DailySale.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Debtsmodule.resx">
+      <DependentUpon>Debtsmodule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depts.resx">
+      <DependentUpon>Depts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Discount.resx">
       <DependentUpon>Discount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loanrecept.resx">
+      <DependentUpon>Loanrecept.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -358,6 +391,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mainform.resx">
       <DependentUpon>mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personal cart.resx">
+      <DependentUpon>personal cart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Product.resx">
       <DependentUpon>Product.cs</DependentUpon>
@@ -386,6 +422,7 @@
     <EmbeddedResource Include="ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptloan.rdlc" />
     <EmbeddedResource Include="rptRecept.rdlc" />
     <EmbeddedResource Include="rptSoldReport.rdlc" />
     <EmbeddedResource Include="SalesReport.resx">

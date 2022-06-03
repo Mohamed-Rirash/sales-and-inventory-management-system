@@ -135,7 +135,8 @@ namespace sales_and_inventory_management_system
         private void btnDepts_Click(object sender, EventArgs e)
         {
             slide(btnDepts);
-
+            Depts debt = new Depts();
+            debt.ShowDialog();
         }
 
         private void btnPass_Click(object sender, EventArgs e)
@@ -415,6 +416,11 @@ namespace sales_and_inventory_management_system
         private void lblDisplayTotal_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Cashier_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
