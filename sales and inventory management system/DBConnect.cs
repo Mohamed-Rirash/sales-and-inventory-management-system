@@ -17,7 +17,7 @@ namespace sales_and_inventory_management_system
         private string con;
         public string myConnection()
         {
-            con = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=sales and inventory db;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            con = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Sales and IVentory mgnt system DB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             return con;
 
         }

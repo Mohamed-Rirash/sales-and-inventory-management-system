@@ -428,6 +428,7 @@ namespace sales_and_inventory_management_system
 
         private void btnStockAdjustment_Click(object sender, EventArgs e)
         {
+            openChildForm(new Adjustment(this));
             hideSubmenu();
 
         }
