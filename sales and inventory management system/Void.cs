@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -32,39 +33,60 @@ namespace sales_and_inventory_management_system
 
         private void btnVoid_Click(object sender, EventArgs e)
         {
+            var password = txtPass.Text;
             try
             {
+
                 if (txtUsername.Text.ToLower() == cancelOrder.txtCancelBy.Text.ToLower())
                 {
                     MessageBox.Show("Void by name and cancelled by name are same!. Please void by another person.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                string user;
-                cn.Open();
-                cm = new SqlCommand("Select * From tbUser Where username = @username and password = @password", cn);
-                cm.Parameters.AddWithValue("@username", txtUsername.Text);
-                cm.Parameters.AddWithValue("@password", txtPass.Text);
-                dr = cm.ExecuteReader();
-                dr.Read();
-                if (dr.HasRows)
-                {
-                    user = dr["username"].ToString();
+                else
+                {//declear hash encryption methode
+                    SHA256 sha = SHA256.Create();
+                    
+                    // compute hash
+                    byte[] data = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
+                    // create string builder
+                    StringBuilder sbuilder = new StringBuilder();
+
+                    for (int i = 0; i < data.Length; i++)
+                    {
+                        sbuilder.Append(data[i].ToString("x2"));
+                    }
+
+                    // hash password assignment
+
+                    var hashedpass = sbuilder.ToString();
+
+                    string user;
+                    cn.Open();
+                    cm = new SqlCommand("Select * From tbUser Where username = @username and password = @password", cn);
+                    cm.Parameters.AddWithValue("@username", txtUsername.Text);
+                    cm.Parameters.AddWithValue("@password", hashedpass);
+                    dr = cm.ExecuteReader();
+                    dr.Read();
+                    if (dr.HasRows)
+                    {
+                        user = dr["username"].ToString();
+                        dr.Close();
+                        cn.Close();
+                        SaveCancelOrder(user);
+                        if (cancelOrder.cboInventory.Text == "yes")
+                        {
+                            dbcon.ExecuteQuery("UPDATE tbProduct SET qty = qty + " + cancelOrder.udCancelQty.Value + " where pcode= '" + cancelOrder.txtPcode.Text + "'");
+                        }
+                        dbcon.ExecuteQuery("UPDATE tbCart SET qty = qty + " + cancelOrder.udCancelQty.Value + " where id LIKE '" + cancelOrder.txtId.Text + "'");
+                        MessageBox.Show("Order transaction successfully cancelled!", "Cancel Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Dispose();
+                        cancelOrder.ReloadSoldList();
+                        cancelOrder.Dispose();
+
+                    }
                     dr.Close();
                     cn.Close();
-                    SaveCancelOrder(user);
-                    if (cancelOrder.cboInventory.Text == "yes")
-                    {
-                        dbcon.ExecuteQuery("UPDATE tbProduct SET qty = qty + " + cancelOrder.udCancelQty.Value + " where pcode= '" + cancelOrder.txtPcode.Text + "'");
-                    }
-                    dbcon.ExecuteQuery("UPDATE tbCart SET qty = qty + " + cancelOrder.udCancelQty.Value + " where id LIKE '" + cancelOrder.txtId.Text + "'");
-                    MessageBox.Show("Order transaction successfully cancelled!", "Cancel Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Dispose();
-                    cancelOrder.ReloadSoldList();
-                    cancelOrder.Dispose();
-
                 }
-                dr.Close();
-                cn.Close();
             }
             catch (Exception ex)
             {

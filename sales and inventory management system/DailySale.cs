@@ -92,6 +92,7 @@ namespace sales_and_inventory_management_system
 
         private void dgvSold_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            Cashier cashier = new Cashier();
             string colName = dgvSold.Columns[e.ColumnIndex].Name;
             if (colName == "Cancel")
             {

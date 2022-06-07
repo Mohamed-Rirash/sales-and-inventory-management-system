@@ -400,6 +400,7 @@ namespace sales_and_inventory_management_system
 
         private void btnPosRecord_Click(object sender, EventArgs e)
         {
+            openChildForm(new Reports());
             hideSubmenu();
 
         }
