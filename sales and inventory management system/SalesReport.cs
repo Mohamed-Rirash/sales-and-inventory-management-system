@@ -94,5 +94,163 @@ namespace sales_and_inventory_management_system
         {
             this.Dispose();
         }
+
+        public void LoadTopSelling(string sql, string param, string header)
+        {
+            try
+            {
+                ReportDataSource rptDS;
+                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptTopSell.rdlc";
+                this.reportViewer1.LocalReport.DataSources.Clear();
+
+                DataSet1 ds = new DataSet1();
+                SqlDataAdapter da = new SqlDataAdapter();
+                cn.Open();
+                da.SelectCommand = new SqlCommand(sql, cn);
+                da.Fill(ds.Tables["dtTopSell"]);
+                cn.Close();
+
+                ReportParameter pDate = new ReportParameter("pDate", param);
+                ReportParameter pHeader = new ReportParameter("pHeader", header);
+
+                reportViewer1.LocalReport.SetParameters(pDate);
+                reportViewer1.LocalReport.SetParameters(pHeader);
+                rptDS = new ReportDataSource("DataSet1", ds.Tables["dtTopSell"]);
+                reportViewer1.LocalReport.DataSources.Add(rptDS);
+                reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
+                reportViewer1.ZoomMode = ZoomMode.Percent;
+                reportViewer1.ZoomPercent = 30;
+            }
+            catch (Exception ex)
+            {
+
+                cn.Close();
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void LoadSoldItems(string sql, string param)
+        {
+            try
+            {
+                ReportDataSource rptDS;
+                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptSoldItems.rdlc";
+                this.reportViewer1.LocalReport.DataSources.Clear();
+
+                DataSet1 ds = new DataSet1();
+                SqlDataAdapter da = new SqlDataAdapter();
+                cn.Open();
+                da.SelectCommand = new SqlCommand(sql, cn);
+                da.Fill(ds.Tables["dtSoldItems"]);
+                cn.Close();
+
+                ReportParameter pDate = new ReportParameter("pDate", param);
+
+                reportViewer1.LocalReport.SetParameters(pDate);
+                rptDS = new ReportDataSource("DataSet1", ds.Tables["dtSoldItems"]);
+                reportViewer1.LocalReport.DataSources.Add(rptDS);
+                reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
+                reportViewer1.ZoomMode = ZoomMode.Percent;
+                reportViewer1.ZoomPercent = 100;
+            }
+            catch (Exception ex)
+            {
+
+                cn.Close();
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void LoadInventory(string sql)
+        {
+            try
+            {
+                ReportDataSource rptDS;
+                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptInventory.rdlc";
+                this.reportViewer1.LocalReport.DataSources.Clear();
+
+                DataSet1 ds = new DataSet1();
+                SqlDataAdapter da = new SqlDataAdapter();
+                cn.Open();
+                da.SelectCommand = new SqlCommand(sql, cn);
+                da.Fill(ds.Tables["dtInventory"]);
+                cn.Close();
+
+
+                rptDS = new ReportDataSource("DataSet1", ds.Tables["dtInventory"]);
+                reportViewer1.LocalReport.DataSources.Add(rptDS);
+                reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
+                reportViewer1.ZoomMode = ZoomMode.Percent;
+                reportViewer1.ZoomPercent = 100;
+            }
+            catch (Exception ex)
+            {
+
+                cn.Close();
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void LoadCancelledOrder(string sql, string param)
+        {
+            try
+            {
+                ReportDataSource rptDS;
+                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptCancelled.rdlc";
+                this.reportViewer1.LocalReport.DataSources.Clear();
+
+                DataSet1 ds = new DataSet1();
+                SqlDataAdapter da = new SqlDataAdapter();
+                cn.Open();
+                da.SelectCommand = new SqlCommand(sql, cn);
+                da.Fill(ds.Tables["dtCancelOrder"]);
+                cn.Close();
+
+                ReportParameter pDate = new ReportParameter("pDate", param);
+
+                reportViewer1.LocalReport.SetParameters(pDate);
+                rptDS = new ReportDataSource("DataSet1", ds.Tables["dtCancelOrder"]);
+                reportViewer1.LocalReport.DataSources.Add(rptDS);
+                reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
+                reportViewer1.ZoomMode = ZoomMode.Percent;
+                reportViewer1.ZoomPercent = 100;
+            }
+            catch (Exception ex)
+            {
+                cn.Close();
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void LoadStockInHist(string sql, string param)
+        {
+            try
+            {
+                ReportDataSource rptDS;
+                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptStockInHist.rdlc";
+                this.reportViewer1.LocalReport.DataSources.Clear();
+
+                DataSet1 ds = new DataSet1();
+                SqlDataAdapter da = new SqlDataAdapter();
+                cn.Open();
+                da.SelectCommand = new SqlCommand(sql, cn);
+                da.Fill(ds.Tables["dtStockInHist"]);
+                cn.Close();
+
+                ReportParameter pDate = new ReportParameter("pDate", param);
+
+                reportViewer1.LocalReport.SetParameters(pDate);
+                rptDS = new ReportDataSource("DataSet1", ds.Tables["dtStockInHist"]);
+                reportViewer1.LocalReport.DataSources.Add(rptDS);
+                reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
+                reportViewer1.ZoomMode = ZoomMode.Percent;
+                reportViewer1.ZoomPercent = 100;
+            }
+            catch (Exception ex)
+            {
+                cn.Close();
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

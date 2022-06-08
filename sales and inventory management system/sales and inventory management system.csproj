@@ -440,9 +440,14 @@
     <EmbeddedResource Include="ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptCancelled.rdlc" />
+    <EmbeddedResource Include="rptInventory.rdlc" />
     <EmbeddedResource Include="rptloan.rdlc" />
     <EmbeddedResource Include="rptRecept.rdlc" />
+    <EmbeddedResource Include="rptSoldItems.rdlc" />
     <EmbeddedResource Include="rptSoldReport.rdlc" />
+    <EmbeddedResource Include="rptStockInHist.rdlc" />
+    <EmbeddedResource Include="rptTopSell.rdlc" />
     <EmbeddedResource Include="SalesReport.resx">
       <DependentUpon>SalesReport.cs</DependentUpon>
     </EmbeddedResource>

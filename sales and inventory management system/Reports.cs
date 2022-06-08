@@ -185,5 +185,51 @@ namespace sales_and_inventory_management_system
         {
             LoadStockInHist();
         }
+
+        private void btnPrintTopSell_Click(object sender, EventArgs e)
+        {
+            SalesReport report = new SalesReport();
+            string param = "From : " + dtFromTopSell.Value.ToString() + " To : " + dtToTopSell.Value.ToString();
+            if (cbTopSell.Text == "Sort By Qty")
+            {
+                report.LoadTopSelling("SELECT TOP 10 pcode, pdesc, isnull(sum(qty),0) AS qty, ISNULL(SUM(total),0) AS total FROM vwTopSelling WHERE sdate BETWEEN '" + dtFromTopSell.Value.ToString() + "' AND '" + dtToTopSell.Value.ToString() + "' AND status LIKE 'Sold' GROUP BY pcode, pdesc ORDER BY qty DESC", param, "TOP SELLING ITEMS SORT BY QTY");
+            }
+            else if (cbTopSell.Text == "Sort By Total Amount")
+            {
+                report.LoadTopSelling("SELECT TOP 10 pcode, pdesc, isnull(sum(qty),0) AS qty, ISNULL(SUM(total),0) AS total FROM vwTopSelling WHERE sdate BETWEEN '" + dtFromTopSell.Value.ToString() + "' AND '" + dtToTopSell.Value.ToString() + "' AND status LIKE 'Sold' GROUP BY pcode, pdesc ORDER BY total DESC", param, "TOP SELLING ITEMS SORY BY TOTAL AMOUNT");
+            }
+            report.ShowDialog();
+        }
+
+        private void btnPrintSoldItems_Click(object sender, EventArgs e)
+        {
+            SalesReport report = new SalesReport();
+            string param = "From : " + dtFromSoldItems.Value.ToString() + " To : " + dtToSoldItems.Value.ToString();
+            report.LoadSoldItems("SELECT c.pcode, p.pdesc, c.price, sum(c.qty) as qty, SUM(c.disc) AS disc, SUM(c.total) AS total FROM tbCart AS c INNER JOIN tbProduct AS p ON c.pcode=p.pcode WHERE status LIKE 'Sold' AND sdate BETWEEN '" + dtFromSoldItems.Value.ToString() + "' AND '" + dtToSoldItems.Value.ToString() + "' GROUP BY c.pcode, p.pdesc, c.price", param);
+            report.ShowDialog();
+        }
+
+        private void btnPrintInventoryList_Click(object sender, EventArgs e)
+        {
+            SalesReport report = new SalesReport();
+            report.LoadInventory("SELECT * FROM vwInventoryList");
+            report.ShowDialog();
+        }
+
+        private void btnPrintCancel_Click(object sender, EventArgs e)
+        {
+            SalesReport report = new SalesReport();
+            string param = "From : " + dtFromCancel.Value.ToString() + " To : " + dtToCancel.Value.ToString();
+            report.LoadCancelledOrder("SELECT * FROM vwCancelItems WHERE sdate BETWEEN '" + dtFromCancel.Value.ToString() + "' AND '" + dtToCancel.Value.ToString() + "'", param);
+            report.ShowDialog();
+        }
+
+        private void btnPrintStockIn_Click(object sender, EventArgs e)
+        {
+            SalesReport report = new SalesReport();
+            string param = "From : " + dtFromStockIn.Value.ToString() + " To : " + dtToStockIn.Value.ToString();
+            report.LoadStockInHist("SELECT * FROM vwStockIn WHERE cast(sdate AS date) BETWEEN '" + dtFromStockIn.Value.ToString() + "' AND '" + dtToStockIn.Value.ToString() + "' AND status LIKE 'Done'", param);
+            report.ShowDialog();
+        }
     }
 }
