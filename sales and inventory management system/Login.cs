@@ -38,12 +38,23 @@ namespace sales_and_inventory_management_system
         }
        public string _username = "", _name = "", _role = "";
         int attempt = 1;
+        private void attem()
+        {
+            MessageBox.Show("Invalid username and password!", "ACCESS DENIED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            attempt++;
+            if (attempt < 4)
+            {
+                return;
+            }
+
+        }
         private void btnLogin_Click(object sender, EventArgs e)
         {
             var password = txtPass.Text;
 
             try
             {
+                
                 if (txtName.Text == "UserName" || txtPass.Text == "Password")
                 {
                     MessageBox.Show("Please Fill UserName and Password", "Empty space", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -124,9 +135,11 @@ namespace sales_and_inventory_management_system
                     }
                     else
                     {
-                        MessageBox.Show("Invalid username and password!", "ACCESS DENIED", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        attempt++;
+                        attem();
+
+
                     }
+                    
                     if (attempt == 4)
                     {
                         MessageBox.Show("You reached  the maximum Number of attempts! \n please request admin to reset your password");

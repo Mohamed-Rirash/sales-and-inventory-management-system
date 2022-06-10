@@ -290,7 +290,10 @@ namespace sales_and_inventory_management_system
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            Noti();
             CollapseMenu();
+            btnDashboard.PerformClick();
+          
         }
 
         #endregion butons
@@ -337,6 +340,7 @@ namespace sales_and_inventory_management_system
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
+            openChildForm(new Dashboard());
             hideSubmenu();
             this.active.Location = new Point(btnDashboard.Location.X, btnDashboard.Location.Y);
         }
@@ -456,6 +460,28 @@ namespace sales_and_inventory_management_system
         private void brnbackup_Click(object sender, EventArgs e)
         {
             hideSubmenu();
+        }
+        public void Noti()
+        {
+            int i = 0;
+            cn.Open();
+            cm = new SqlCommand("SELECT * FROM vwCriticalItems", cn);
+            dr = cm.ExecuteReader();
+            while (dr.Read())
+            {
+                i++;
+                Notifications alert = new Notifications(this);
+                alert.lblPcode.Text = dr["pcode"].ToString();
+                alert.btnReorder.Enabled = true;
+                alert.showAlert(i + ". " + dr["pdesc"].ToString() + " - " + dr["qty"].ToString());
+            }
+            dr.Close();
+            cn.Close();
+        }
+
+        private void mainform_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

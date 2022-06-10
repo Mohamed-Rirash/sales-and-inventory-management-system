@@ -194,6 +194,12 @@
     <Compile Include="DailySale.Designer.cs">
       <DependentUpon>DailySale.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.cs">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
@@ -245,6 +251,12 @@
       <DependentUpon>mainform.cs</DependentUpon>
     </Compile>
     <Compile Include="DBConnect.cs" />
+    <Compile Include="Notifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notifications.Designer.cs">
+      <DependentUpon>Notifications.cs</DependentUpon>
+    </Compile>
     <Compile Include="personal cart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,6 +332,7 @@
     <Compile Include="Store.Designer.cs">
       <DependentUpon>Store.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThemeColor.cs" />
     <Compile Include="UserAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -386,6 +399,9 @@
     <EmbeddedResource Include="DailySale.resx">
       <DependentUpon>DailySale.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Debtsmodule.resx">
       <DependentUpon>Debtsmodule.cs</DependentUpon>
     </EmbeddedResource>
@@ -406,6 +422,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mainform.resx">
       <DependentUpon>mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notifications.resx">
+      <DependentUpon>Notifications.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="personal cart.resx">
       <DependentUpon>personal cart.cs</DependentUpon>

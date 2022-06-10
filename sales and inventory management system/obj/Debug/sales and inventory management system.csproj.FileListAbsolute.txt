@@ -395,3 +395,5 @@ C:\Users\Rirash\Videos\AnyDesk\sales-and-inventory-management-system\sales and i
 C:\Users\Rirash\Videos\AnyDesk\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales and inventory management system.pdb
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Adjustment.resources
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Reports.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Dashboard.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Notifications.resources

@@ -710,6 +710,7 @@
             this.Name = "mainform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.mainform_FormClosing);
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.Resize += new System.EventHandler(this.Dashboard_Resize);
             this.panelLogo.ResumeLayout(false);

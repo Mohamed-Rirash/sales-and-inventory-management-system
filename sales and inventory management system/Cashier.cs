@@ -422,5 +422,27 @@ namespace sales_and_inventory_management_system
         {
             Application.Exit();
         }
+        public void Noti()
+        {
+            int i = 0;
+            cn.Open();
+            cm = new SqlCommand("SELECT * FROM vwCriticalItems", cn);
+            dr = cm.ExecuteReader();
+            while (dr.Read())
+            {
+                i++;
+                Notifications alert = new Notifications(new mainform());
+                alert.lblPcode.Text = dr["pcode"].ToString();
+                alert.btnReorder.Enabled = false;
+                alert.showAlert(i + ". " + dr["pdesc"].ToString() + " - " + dr["qty"].ToString());
+            }
+            dr.Close();
+            cn.Close();
+        }
+
+        private void Cashier_Load(object sender, EventArgs e)
+        {
+            Noti();
+        }
     }
 }
