@@ -111,8 +111,17 @@ namespace sales_and_inventory_management_system
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                cn.Close();
+                if (ex is SqlException)
+                {
+                    MessageBox.Show(txtphone.Text + " Is Allready Their", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtphone.Focus();
+                    cn.Close();
+                }
+                else
+                {
+                    MessageBox.Show(ex.Message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cn.Close();
+                }
 
 
             }
@@ -158,6 +167,7 @@ namespace sales_and_inventory_management_system
         {
             try
             {
+                double total = double.Parse(pamout.Text ) + double.Parse(txtamount.Text);
                 if (cmbname.Text == String.Empty)
                 {
                     cmbname.Focus();
@@ -167,15 +177,16 @@ namespace sales_and_inventory_management_system
                 {
                     if (MessageBox.Show("Are you sure want to update this Debt person?", "Update Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        cm = new SqlCommand("UPDATE Depts SET CustomerName=@CustomerName,Type=@Type,Phone=@Phone WHERE Phone LIKE @Phone", cn);
+                        cm = new SqlCommand("UPDATE Depts SET CustomerName=@CustomerName,Type=@Type,Phone=@Phone, AmountDept=@AmountDept WHERE Phone LIKE @Phone", cn);
                         cm.Parameters.AddWithValue("@CustomerName", cmbname.Text);
                         cm.Parameters.AddWithValue("@Type", txttype.Text);
                         cm.Parameters.AddWithValue("@Phone", txtphone.Text);
+                        cm.Parameters.AddWithValue("@AmountDept", total );
 
                         cn.Open();
                         cm.ExecuteNonQuery();
                         cn.Close();
-                        MessageBox.Show("Product has been successfully updated.", stitle);
+                        MessageBox.Show("Amount has been successfully updated.", stitle);
                         Clear();
                         this.Dispose();
                     }

@@ -31,10 +31,12 @@ namespace sales_and_inventory_management_system
 
         public void Loadcart()
         {
+            
             int i = 0;
             dgvcart.Rows.Clear();
-            cm = new SqlCommand("SELECT * FROM tbCart  WHERE transno LIKE '%" + dgvcart.SelectedRows + "%'", cn);
             cn.Open();
+            cm = new SqlCommand("SELECT transno,pcode,price,qty,disc,total,sdate,cashier FROM tbCart  WHERE transno@transno", cn);
+           
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
@@ -45,5 +47,6 @@ namespace sales_and_inventory_management_system
             cn.Close();
         }
 
+       
     }
 }

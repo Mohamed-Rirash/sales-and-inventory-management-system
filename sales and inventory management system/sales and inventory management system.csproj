@@ -357,6 +357,12 @@
     <Compile Include="Vendormodule.Designer.cs">
       <DependentUpon>Vendormodule.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewpaiddebts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewpaiddebts.Designer.cs">
+      <DependentUpon>viewpaiddebts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Void.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -490,6 +496,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vendormodule.resx">
       <DependentUpon>Vendormodule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewpaiddebts.resx">
+      <DependentUpon>viewpaiddebts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Void.resx">
       <DependentUpon>Void.cs</DependentUpon>

@@ -163,6 +163,11 @@ namespace sales_and_inventory_management_system
         
 
         private void btnexit_Click(object sender, EventArgs e)
+        {Task.Run(() =>
+            exit());
+        }
+
+        private static void exit()
         {
             if (MessageBox.Show("Exit Application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {

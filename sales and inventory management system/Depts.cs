@@ -28,8 +28,8 @@ namespace sales_and_inventory_management_system
         {
             int i = 0;
             dgvDebts.Rows.Clear();
-            cm = new SqlCommand("SELECT CustomerName, Type, Phone, transNo, Date,  AmountDept FROM Depts  WHERE CONCAT(CustomerName, Type, transNo,Phone,AmountDept,Date) LIKE '%" + txtSearch.Text + "%'", cn);
             cn.Open();
+            cm = new SqlCommand("SELECT CustomerName, Type, Phone, transNo, Date,  AmountDept FROM Depts  WHERE CONCAT(CustomerName, Type, transNo,Phone,AmountDept,Date) LIKE '%" + txtSearch.Text + "%'", cn);
             dr = cm.ExecuteReader();
             while (dr.Read())
             {
@@ -74,9 +74,9 @@ namespace sales_and_inventory_management_system
                     debts.cmbname.Text = dgvDebts.Rows[e.RowIndex].Cells[1].Value.ToString();
                     debts.txttype.Text = dgvDebts.Rows[e.RowIndex].Cells[2].Value.ToString();
                     debts.txtphone.Text = dgvDebts.Rows[e.RowIndex].Cells[3].Value.ToString();
-                    debts.txtamount.Text = dgvDebts.Rows[e.RowIndex].Cells[6].Value.ToString();
+                    debts.pamout.Text = dgvDebts.Rows[e.RowIndex].Cells[6].Value.ToString();
 
-                    debts.txtamount.Enabled = false;
+                   
                     debts.btnSave.Enabled = false;
                     debts.btnUpdate.Enabled = true;
                     debts.ShowDialog();
@@ -86,6 +86,7 @@ namespace sales_and_inventory_management_system
                     personal_cart cart = new personal_cart();
                     cart.ShowDialog();
                 }
+               
                 LoadDepts();
             }
             catch (Exception ex)
@@ -93,6 +94,43 @@ namespace sales_and_inventory_management_system
                 cn.Close();
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void dgvDebts_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 7)
+
+            {
+                if (MessageBox.Show("Are you sure want to save this product?", "Save Product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    cm = new SqlCommand("INSERT INTO paidpeople(CustomerName, Type, transNo, Date, Phone, AmountDept)VALUES (@CustomerName,@Type,@transNo,@Date,@Phone,@AmountDept)", cn);
+                    cm.Parameters.AddWithValue("@CustomerName", dgvDebts.Rows[e.RowIndex].Cells[1].Value.ToString());
+                    cm.Parameters.AddWithValue("@Type", dgvDebts.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    cm.Parameters.AddWithValue("@transNo", dgvDebts.Rows[e.RowIndex].Cells[4].Value.ToString());
+                    cm.Parameters.AddWithValue("@Date", DateTime.Parse( dgvDebts.Rows[e.RowIndex].Cells[5].Value.ToString()));
+                    cm.Parameters.AddWithValue("@Phone", dgvDebts.Rows[e.RowIndex].Cells[3].Value.ToString());
+                    cm.Parameters.AddWithValue("@AmountDept",double.Parse( dgvDebts.Rows[e.RowIndex].Cells[6].Value.ToString()));
+                    cn.Open();
+                    cm.ExecuteNonQuery();
+                    cn.Close();
+                    MessageBox.Show("Dubt Paid successfully saved.", "SIMs");
+                   //delet from debts
+                    cn.Open();
+                    cm = new SqlCommand("DELETE FROM Depts WHERE Phone LIKE '" + dgvDebts[3, e.RowIndex].Value.ToString() + "'", cn);
+                    cm.ExecuteNonQuery();
+                    cn.Close();
+                    LoadDepts();
+                  //  MessageBox.Show("Brand has been successfully deleted.", "Sales Ms", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                }
+            }
+        }
+
+        private void btnviewpaid_Click(object sender, EventArgs e)
+        {
+            viewpaiddebts viewpaid = new viewpaiddebts();
+            viewpaid.ShowDialog();
         }
     }
 }

@@ -45,6 +45,8 @@
             this.txtphone = new System.Windows.Forms.TextBox();
             this.btnnewcustomer = new System.Windows.Forms.Button();
             this.lbamount = new System.Windows.Forms.Label();
+            this.pamout = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -218,11 +220,30 @@
             this.lbamount.Size = new System.Drawing.Size(0, 20);
             this.lbamount.TabIndex = 42;
             // 
+            // pamout
+            // 
+            this.pamout.AutoSize = true;
+            this.pamout.Location = new System.Drawing.Point(202, 258);
+            this.pamout.Name = "pamout";
+            this.pamout.Size = new System.Drawing.Size(0, 20);
+            this.pamout.TabIndex = 51;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(27, 258);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(139, 20);
+            this.label6.TabIndex = 52;
+            this.label6.Text = "Preview Amount: ";
+            // 
             // Debtsmodule
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(512, 338);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.pamout);
             this.Controls.Add(this.cmbname);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnnewcustomer);
@@ -267,5 +288,7 @@
         public System.Windows.Forms.TextBox txtphone;
         public System.Windows.Forms.Button btnnewcustomer;
         public System.Windows.Forms.Label lbamount;
+        public System.Windows.Forms.Label pamout;
+        private System.Windows.Forms.Label label6;
     }
 }
