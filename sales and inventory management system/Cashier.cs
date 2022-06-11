@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,7 @@ namespace sales_and_inventory_management_system
         string price;
 
         string stitle = "Point Of Sales";
+        private UserPreferenceChangedEventHandler UserPreferenceChanged;
 
         public Cashier()
         {
@@ -30,7 +32,57 @@ namespace sales_and_inventory_management_system
             cn = new SqlConnection(dbcon.myConnection());
             GetTranNo();
             lblDate.Text = DateTime.Now.ToShortDateString();
+            UserPreferenceChanged = new UserPreferenceChangedEventHandler(SystemEvents_UserPreferenceChanged);
+            SystemEvents.UserPreferenceChanged += UserPreferenceChanged;
+            this.Disposed += new EventHandler(Form_Disposed);
+            LoadTheme();
         }
+
+        #region theme 
+
+        //load theme after change
+        private void SystemEvents_UserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)
+        {
+            if (e.Category == UserPreferenceCategory.General || e.Category == UserPreferenceCategory.VisualStyle)
+            {
+                LoadTheme();
+            }
+        }
+        //system dispose
+        private void Form_Disposed(object sender, EventArgs e)
+        {
+            SystemEvents.UserPreferenceChanged -= UserPreferenceChanged;
+        }
+        // load theme
+        private void LoadTheme()
+        {
+            var themeColor = WinTheme.GetAccentColor();//Windows Accent Color
+            var lightColor = ControlPaint.Light(themeColor);
+            var darkColor = ControlPaint.Dark(themeColor);
+           // panel1.BackColor = themeColor;
+            panel1.BackColor = darkColor;
+            panel2.BackColor = darkColor;
+            panelSlide.BackColor = lightColor;
+            lblTimer.BackColor = lightColor;
+            lblDisplayTotal.BackColor = lightColor;
+            panel4.BackColor = themeColor;
+
+            //Buttons
+            foreach (Button button in this.Controls.OfType<Button>())
+            {
+                button.BackColor = themeColor;
+            }
+            foreach (Button button in this.panel1.Controls.OfType<Button>())
+            {
+                button.FlatAppearance.MouseOverBackColor = themeColor;
+                button.FlatAppearance.MouseDownBackColor = lightColor;
+            }
+        }
+
+
+
+        #endregion
+        // buttons
         public void slide(Button button)
         {
 

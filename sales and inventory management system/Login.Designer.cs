@@ -214,11 +214,11 @@
             this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPass.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPass.Location = new System.Drawing.Point(380, 193);
+            this.txtPass.Location = new System.Drawing.Point(380, 187);
             this.txtPass.Multiline = true;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '●';
-            this.txtPass.Size = new System.Drawing.Size(207, 20);
+            this.txtPass.Size = new System.Drawing.Size(207, 26);
             this.txtPass.TabIndex = 1;
             this.txtPass.Text = "Password";
             this.txtPass.Enter += new System.EventHandler(this.txtPass_Enter);

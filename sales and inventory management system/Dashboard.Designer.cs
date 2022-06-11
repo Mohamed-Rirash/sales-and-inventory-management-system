@@ -55,9 +55,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.Darkmode = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.WhiteMode = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -353,8 +351,6 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.panel10.Controls.Add(this.Darkmode);
-            this.panel10.Controls.Add(this.WhiteMode);
             this.panel10.Controls.Add(this.iconButton1);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
@@ -362,45 +358,22 @@
             this.panel10.Size = new System.Drawing.Size(968, 48);
             this.panel10.TabIndex = 3;
             // 
-            // Darkmode
-            // 
-            this.Darkmode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Darkmode.IconChar = FontAwesome.Sharp.IconChar.Sun;
-            this.Darkmode.IconColor = System.Drawing.Color.White;
-            this.Darkmode.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Darkmode.IconSize = 40;
-            this.Darkmode.Location = new System.Drawing.Point(860, 6);
-            this.Darkmode.Name = "Darkmode";
-            this.Darkmode.Size = new System.Drawing.Size(56, 45);
-            this.Darkmode.TabIndex = 0;
-            this.Darkmode.UseVisualStyleBackColor = false;
-            // 
             // iconButton1
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Bell;
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 40;
-            this.iconButton1.Location = new System.Drawing.Point(729, 3);
+            this.iconButton1.Location = new System.Drawing.Point(909, 3);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(56, 45);
             this.iconButton1.TabIndex = 0;
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // WhiteMode
-            // 
-            this.WhiteMode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.WhiteMode.IconChar = FontAwesome.Sharp.IconChar.Moon;
-            this.WhiteMode.IconColor = System.Drawing.Color.White;
-            this.WhiteMode.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.WhiteMode.IconSize = 40;
-            this.WhiteMode.Location = new System.Drawing.Point(860, 6);
-            this.WhiteMode.Name = "WhiteMode";
-            this.WhiteMode.Size = new System.Drawing.Size(56, 45);
-            this.WhiteMode.TabIndex = 0;
-            this.WhiteMode.UseVisualStyleBackColor = false;
             // 
             // Dashboard
             // 
@@ -457,9 +430,7 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel10;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton Darkmode;
-        private FontAwesome.Sharp.IconButton WhiteMode;
+        public System.Windows.Forms.Panel panel10;
     }
 }

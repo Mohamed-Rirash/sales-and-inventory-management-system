@@ -25,6 +25,9 @@ namespace sales_and_inventory_management_system
             lblStockOnHand.Text = dbcon.ExtractData("SELECT ISNULL(SUM(qty), 0) AS qty FROM tbProduct").ToString("#,##0");
             lblCriticalItems.Text = dbcon.ExtractData("SELECT COUNT(*) FROM vwCriticalItems").ToString("#,##0");
         }
+      
+
+
 
         private void iconButton1_Click(object sender, EventArgs e)
         {

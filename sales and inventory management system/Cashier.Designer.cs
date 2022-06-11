@@ -54,7 +54,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblname = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dgvCash = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -221,7 +220,7 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 677);
+            this.btnLogout.Location = new System.Drawing.Point(0, 627);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(200, 50);
             this.btnLogout.TabIndex = 11;
@@ -246,9 +245,9 @@
             this.panel1.Controls.Add(this.btnNTran);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 727);
+            this.panel1.Size = new System.Drawing.Size(200, 677);
             this.panel1.TabIndex = 5;
             // 
             // btnPass
@@ -339,10 +338,10 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(111)))), ((int)(((byte)(61)))));
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Controls.Add(this.lblname);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(200, 677);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1148, 50);
+            this.panel4.Size = new System.Drawing.Size(1348, 50);
             this.panel4.TabIndex = 7;
             // 
             // pictureBox2
@@ -365,22 +364,13 @@
             this.lblname.TabIndex = 0;
             this.lblname.Text = "Name and Role";
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(4)))), ((int)(((byte)(94)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(200, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 677);
-            this.panel3.TabIndex = 6;
-            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.dgvCash);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(210, 0);
+            this.panel6.Location = new System.Drawing.Point(200, 50);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(918, 677);
+            this.panel6.Size = new System.Drawing.Size(928, 677);
             this.panel6.TabIndex = 9;
             // 
             // dgvCash
@@ -415,7 +405,7 @@
             this.dgvCash.Location = new System.Drawing.Point(0, 0);
             this.dgvCash.Name = "dgvCash";
             this.dgvCash.RowHeadersVisible = false;
-            this.dgvCash.Size = new System.Drawing.Size(918, 677);
+            this.dgvCash.Size = new System.Drawing.Size(928, 677);
             this.dgvCash.TabIndex = 11;
             this.dgvCash.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCash_CellContentClick);
             this.dgvCash.SelectionChanged += new System.EventHandler(this.dgvCash_SelectionChanged);
@@ -688,7 +678,7 @@
             this.panel5.Controls.Add(this.lblDisplayTotal);
             this.panel5.Controls.Add(this.lblTimer);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1128, 0);
+            this.panel5.Location = new System.Drawing.Point(1128, 50);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(220, 677);
             this.panel5.TabIndex = 8;
@@ -712,10 +702,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1348, 727);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel4);
             this.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -761,7 +750,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.Label lblname;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnPass;
         private System.Windows.Forms.Button btnDepts;
         private System.Windows.Forms.Panel panel6;

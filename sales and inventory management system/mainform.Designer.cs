@@ -740,8 +740,6 @@
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelSubSetting;
         private System.Windows.Forms.Button btnStore;
-        private System.Windows.Forms.Button btnUser;
-        private System.Windows.Forms.Button btnSetting;
         private System.Windows.Forms.Panel panelSubRecord;
         private System.Windows.Forms.Button btnPosRecord;
         private System.Windows.Forms.Button btnSaleHist;
@@ -764,5 +762,7 @@
         private MetroFramework.Drawing.Html.HtmlToolTip htmlToolTip1;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Panel active;
+        public System.Windows.Forms.Button btnUser;
+        public System.Windows.Forms.Button btnSetting;
     }
 }
