@@ -400,3 +400,7 @@ E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-managem
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.viewpaiddebts.resources
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.UserHelp.resources
 E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.Back_up.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Debug\sales_and_inventory_management_system.splish.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\CircularProgressBar.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\WinFormAnimation.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Debug\CircularProgressBar.xml

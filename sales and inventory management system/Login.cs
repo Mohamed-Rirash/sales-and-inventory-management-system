@@ -51,6 +51,7 @@ namespace sales_and_inventory_management_system
         private void btnLogin_Click(object sender, EventArgs e)
         {
             var password = txtPass.Text;
+            splish sp = new splish();
 
             try
             {
@@ -111,10 +112,12 @@ namespace sales_and_inventory_management_system
                         }
                         if (_role == "Cashier")
                         {
-                            MessageBox.Show("Welcome " + _name + " |", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
+                            sp.ShowDialog();
+                           // MessageBox.Show("Welcome " + _name + " |", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             txtName.Clear();
                             txtPass.Clear();
-                            this.Hide();
+                            
                             Cashier cashier = new Cashier();
                             cashier.lblUsername.Text = _username;
                             cashier.lblname.Text = _name + " | " + _role;
@@ -122,10 +125,11 @@ namespace sales_and_inventory_management_system
                         }
                         else
                         {
-                            MessageBox.Show("Welcome " + _name + " |", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
+                            sp.ShowDialog();
+                            // MessageBox.Show("Welcome " + _name + " |", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             txtName.Clear();
                             txtPass.Clear();
-                            this.Hide();
                             mainform main = new mainform();
                             main.lblUsername.Text = _username;
                             main.lblName.Text = _name;

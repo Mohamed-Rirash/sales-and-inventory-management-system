@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
@@ -52,10 +53,13 @@ namespace sales_and_inventory_management_system
       
         public mainform()
         {
+            
             InitializeComponent();
+          
             customizeDesing();
             customizeDesing();
             LoadTheme();
+
             cn = new SqlConnection(dbcon.myConnection());
             UserPreferenceChanged = new UserPreferenceChangedEventHandler(SystemEvents_UserPreferenceChanged);
            SystemEvents.UserPreferenceChanged += UserPreferenceChanged;
@@ -66,6 +70,7 @@ namespace sales_and_inventory_management_system
             this.BackColor = Color.FromArgb(98, 102, 244);//Border color
             
         }
+       
 
         #region theme 
 
