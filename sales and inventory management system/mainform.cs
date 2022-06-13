@@ -519,6 +519,7 @@ namespace sales_and_inventory_management_system
 
         private void brnbackup_Click(object sender, EventArgs e)
         {
+            openChildForm(new Back_up());
             hideSubmenu();
         }
         public void Noti()

@@ -129,6 +129,12 @@
     <Compile Include="Adjustment.Designer.cs">
       <DependentUpon>Adjustment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Back up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Back up.Designer.cs">
+      <DependentUpon>Back up.cs</DependentUpon>
+    </Compile>
     <Compile Include="Brand.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -379,6 +385,9 @@
     <Compile Include="WinTheme.cs" />
     <EmbeddedResource Include="Adjustment.resx">
       <DependentUpon>Adjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Back up.resx">
+      <DependentUpon>Back up.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Brand.resx">
       <DependentUpon>Brand.cs</DependentUpon>
