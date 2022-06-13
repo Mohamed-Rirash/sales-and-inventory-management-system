@@ -21,10 +21,10 @@ namespace sales_and_inventory_management_system
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
-            LoadDepts();
+            LoadpDepts();
         }
 
-        public void LoadDepts()
+        public void LoadpDepts()
         {
             int i = 0;
             dgvDebts.Rows.Clear();

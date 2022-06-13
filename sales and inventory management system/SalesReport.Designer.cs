@@ -67,9 +67,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(339, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 18);
+            this.label1.Size = new System.Drawing.Size(380, 18);
             this.label1.TabIndex = 0;
-            this.label1.Text = "PRINT PREVIEW FOR POINT OF SALES RECORD";
+            this.label1.Text = "PRINT PREVIEW FOR SALES AND INVENTORY RECORD";
             // 
             // reportViewer1
             // 

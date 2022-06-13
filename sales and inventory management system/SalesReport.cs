@@ -252,5 +252,42 @@ namespace sales_and_inventory_management_system
                 MessageBox.Show(ex.Message);
             }
         }
+
+        public void LoadDEBTS(string sql, string param)
+        {
+            
+        }
+
+        internal void LoadDEBTS(string sql)
+        {
+            try
+            {
+                ReportDataSource rptDS;
+                this.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\Reports\rptDebts.rdlc";
+                this.reportViewer1.LocalReport.DataSources.Clear();
+
+                DataSet1 ds = new DataSet1();
+                SqlDataAdapter da = new SqlDataAdapter();
+                cn.Open();
+                da.SelectCommand = new SqlCommand(sql, cn);
+                da.Fill(ds.Tables["dtdebts"]);
+                cn.Close();
+
+               // ReportParameter pDate = new ReportParameter("pDate",);
+
+               // reportViewer1.LocalReport.SetParameters(pDate);
+                rptDS = new ReportDataSource("DataSet1", ds.Tables["dtSoldItems"]);
+                reportViewer1.LocalReport.DataSources.Add(rptDS);
+                reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
+                reportViewer1.ZoomMode = ZoomMode.Percent;
+                reportViewer1.ZoomPercent = 100;
+            }
+            catch (Exception ex)
+            {
+
+                cn.Close();
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

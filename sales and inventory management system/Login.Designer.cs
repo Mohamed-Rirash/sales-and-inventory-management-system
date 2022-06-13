@@ -109,6 +109,7 @@
             this.llblhelp.TabStop = true;
             this.llblhelp.Text = "Reques admin Help";
             this.llblhelp.Visible = false;
+            this.llblhelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblhelp_LinkClicked);
             // 
             // pictureBox1
             // 

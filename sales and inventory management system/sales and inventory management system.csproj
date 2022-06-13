@@ -340,6 +340,12 @@
     <Compile Include="UserAccount.Designer.cs">
       <DependentUpon>UserAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHelp.Designer.cs">
+      <DependentUpon>UserHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserProperties.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -461,6 +467,7 @@
     <EmbeddedResource Include="Recept.resx">
       <DependentUpon>Recept.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptDebts.rdlc" />
     <EmbeddedResource Include="Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
@@ -489,6 +496,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserAccount.resx">
       <DependentUpon>UserAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHelp.resx">
+      <DependentUpon>UserHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserProperties.resx">
       <DependentUpon>UserProperties.cs</DependentUpon>

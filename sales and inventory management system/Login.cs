@@ -238,6 +238,13 @@ namespace sales_and_inventory_management_system
             }
         }
 
+        private void llblhelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            UserHelp help = new UserHelp();
+            this.Hide();
+            help.ShowDialog();
+        }
+
         private void txtPass_Leave(object sender, EventArgs e)
         {
             if (txtPass.Text == "")

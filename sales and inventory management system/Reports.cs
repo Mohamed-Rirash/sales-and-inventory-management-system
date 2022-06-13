@@ -231,5 +231,53 @@ namespace sales_and_inventory_management_system
             report.LoadStockInHist("SELECT * FROM vwStockIn WHERE cast(sdate AS date) BETWEEN '" + dtFromStockIn.Value.ToString() + "' AND '" + dtToStockIn.Value.ToString() + "' AND status LIKE 'Done'", param);
             report.ShowDialog();
         }
+
+        private void loaddepts_Click(object sender, EventArgs e)
+        {
+            LoadDepts();
+        }
+
+        public void LoadDepts()
+        {
+            int i = 0;
+            dgvDebts.Rows.Clear();
+            cn.Open();
+            cm = new SqlCommand("SELECT CustomerName, Type, Phone, transNo, Date,  AmountDept FROM Depts  ", cn);
+            dr = cm.ExecuteReader();
+            while (dr.Read())
+            {
+                i++;
+                dgvDebts.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString());
+            }
+            dr.Close();
+            cn.Close();
+        }
+
+        private void loadpaid_Click(object sender, EventArgs e)
+        {
+            LoadpDepts();
+        }
+        public void LoadpDepts()
+        {
+            int i = 0;
+            dgvDebts.Rows.Clear();
+            cn.Open();
+            cm = new SqlCommand("SELECT CustomerName, Type, Phone, transNo, Date,  AmountDept FROM paidpeople ", cn);
+            dr = cm.ExecuteReader();
+            while (dr.Read())
+            {
+                i++;
+                dgvpaid.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString());
+            }
+            dr.Close();
+            cn.Close();
+        }
+
+        private void printdebts_Click(object sender, EventArgs e)
+        {
+            SalesReport report = new SalesReport();
+            report.LoadDEBTS("SELECT * FROM Depts");
+            report.ShowDialog();
+        }
     }
 }

@@ -234,6 +234,8 @@ namespace sales_and_inventory_management_system
                 MessageBox.Show(ex.Message);
             }
         }
+
+
         private void fillcustomer()
         {
             cn.Open();
