@@ -113,6 +113,7 @@ namespace sales_and_inventory_management_system
                         if (_role == "Cashier")
                         {
                             this.Hide();
+                            sp.lblusername.Text = _name;
                             sp.ShowDialog();
                            // MessageBox.Show("Welcome " + _name + " |", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             txtName.Clear();
@@ -126,6 +127,7 @@ namespace sales_and_inventory_management_system
                         else
                         {
                             this.Hide();
+                            sp.lblusername.Text = _name;
                             sp.ShowDialog();
                             // MessageBox.Show("Welcome " + _name + " |", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             txtName.Clear();
@@ -247,6 +249,11 @@ namespace sales_and_inventory_management_system
             UserHelp help = new UserHelp();
             this.Hide();
             help.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void txtPass_Leave(object sender, EventArgs e)

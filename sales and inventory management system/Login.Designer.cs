@@ -117,7 +117,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(386, 416);
+            this.pictureBox1.Size = new System.Drawing.Size(347, 416);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
@@ -132,6 +132,7 @@
             this.label1.Size = new System.Drawing.Size(321, 22);
             this.label1.TabIndex = 23;
             this.label1.Text = "KhayrMaal Sale and Inventory Log In";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 

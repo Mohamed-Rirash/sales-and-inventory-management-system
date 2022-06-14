@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,11 +14,59 @@ namespace sales_and_inventory_management_system
     public partial class CancelOrder : Form
     {
         DailySale dailySale;
+        private UserPreferenceChangedEventHandler UserPreferenceChanged;
+
         public CancelOrder(DailySale sale)
         {
             InitializeComponent();
+            UserPreferenceChanged = new UserPreferenceChangedEventHandler(SystemEvents_UserPreferenceChanged);
+            SystemEvents.UserPreferenceChanged += UserPreferenceChanged;
+            this.Disposed += new EventHandler(Form_Disposed);
+            LoadTheme();
             dailySale = sale;
         }
+
+        #region theme 
+
+        //load theme after change
+        private void SystemEvents_UserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)
+        {
+            if (e.Category == UserPreferenceCategory.General || e.Category == UserPreferenceCategory.VisualStyle)
+            {
+                LoadTheme();
+            }
+        }
+        //system dispose
+        private void Form_Disposed(object sender, EventArgs e)
+        {
+            SystemEvents.UserPreferenceChanged -= UserPreferenceChanged;
+        }
+        // load theme
+        private void LoadTheme()
+        {
+            var themeColor = WinTheme.GetAccentColor();//Windows Accent Color
+            var lightColor = ControlPaint.Light(themeColor);
+            var darkColor = ControlPaint.Dark(themeColor);
+
+            panel1.BackColor = themeColor;
+           
+
+
+            //Buttons
+            foreach (Button button in this.Controls.OfType<Button>())
+            {
+                button.BackColor = themeColor;
+            }
+            foreach (Button button in this.Controls.OfType<Button>())
+            {
+                button.FlatAppearance.MouseOverBackColor = themeColor;
+                button.FlatAppearance.MouseDownBackColor = lightColor;
+            }
+        }
+
+
+
+        #endregion
 
         private void picClose_Click(object sender, EventArgs e)
         {

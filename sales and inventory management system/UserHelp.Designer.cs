@@ -51,7 +51,7 @@
             this.btnSend.FlatAppearance.BorderSize = 0;
             this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSend.ForeColor = System.Drawing.Color.White;
-            this.btnSend.Location = new System.Drawing.Point(176, 271);
+            this.btnSend.Location = new System.Drawing.Point(190, 269);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(94, 35);
             this.btnSend.TabIndex = 55;
@@ -66,7 +66,7 @@
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(307, 271);
+            this.btnCancel.Location = new System.Drawing.Point(321, 269);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(94, 35);
             this.btnCancel.TabIndex = 61;
@@ -160,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 491);
+            this.ClientSize = new System.Drawing.Size(474, 316);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label5);

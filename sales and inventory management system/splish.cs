@@ -42,12 +42,22 @@ namespace sales_and_inventory_management_system
         Login lg = new Login();
         private void splish_Load(object sender, EventArgs e)
         {
-            lblusername.Text = lg._name.ToString();
+            //lblusername.Text = lg._name.ToString();
             this.Opacity = 0.0;
             circularProgressBar1.Value = 0;
             circularProgressBar1.Minimum = 0;
             circularProgressBar1.Maximum = 100;
             timer1.Start();
+        }
+
+        private void circularProgressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblusername_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

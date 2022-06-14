@@ -39,7 +39,7 @@
             this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvDebts = new System.Windows.Forms.DataGridView();
+            this.dgvpDebts = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,7 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDebts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvpDebts)).BeginInit();
             this.SuspendLayout();
             // 
             // picClose
@@ -72,7 +72,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(984, 34);
+            this.panel2.Size = new System.Drawing.Size(984, 44);
             this.panel2.TabIndex = 17;
             // 
             // toolTip1
@@ -129,7 +129,7 @@
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 34);
+            this.panel1.Location = new System.Drawing.Point(0, 44);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 51);
             this.panel1.TabIndex = 16;
@@ -147,12 +147,12 @@
             this.label1.Text = "Paid Debts";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // dgvDebts
+            // dgvpDebts
             // 
-            this.dgvDebts.AllowUserToAddRows = false;
-            this.dgvDebts.AllowUserToDeleteRows = false;
-            this.dgvDebts.BackgroundColor = System.Drawing.Color.White;
-            this.dgvDebts.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvpDebts.AllowUserToAddRows = false;
+            this.dgvpDebts.AllowUserToDeleteRows = false;
+            this.dgvpDebts.BackgroundColor = System.Drawing.Color.White;
+            this.dgvpDebts.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(71)))), ((int)(((byte)(232)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -160,10 +160,10 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDebts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvDebts.ColumnHeadersHeight = 30;
-            this.dgvDebts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvDebts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvpDebts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvpDebts.ColumnHeadersHeight = 30;
+            this.dgvpDebts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvpDebts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
@@ -179,15 +179,15 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(228)))), ((int)(((byte)(249)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDebts.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvDebts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDebts.EnableHeadersVisualStyles = false;
-            this.dgvDebts.Location = new System.Drawing.Point(0, 85);
-            this.dgvDebts.Name = "dgvDebts";
-            this.dgvDebts.ReadOnly = true;
-            this.dgvDebts.RowHeadersVisible = false;
-            this.dgvDebts.Size = new System.Drawing.Size(984, 476);
-            this.dgvDebts.TabIndex = 18;
+            this.dgvpDebts.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvpDebts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvpDebts.EnableHeadersVisualStyles = false;
+            this.dgvpDebts.Location = new System.Drawing.Point(0, 95);
+            this.dgvpDebts.Name = "dgvpDebts";
+            this.dgvpDebts.ReadOnly = true;
+            this.dgvpDebts.RowHeadersVisible = false;
+            this.dgvpDebts.Size = new System.Drawing.Size(984, 466);
+            this.dgvpDebts.TabIndex = 18;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -260,7 +260,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.dgvDebts);
+            this.Controls.Add(this.dgvpDebts);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -272,7 +272,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDebts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvpDebts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -284,7 +284,7 @@
         private MetroFramework.Controls.MetroTextBox txtSearch;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvDebts;
+        private System.Windows.Forms.DataGridView dgvpDebts;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;

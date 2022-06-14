@@ -66,7 +66,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 16);
+            this.label1.Size = new System.Drawing.Size(101, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Customer Name";
             // 
@@ -84,15 +84,15 @@
             // btnok
             // 
             this.btnok.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnok.ForeColor = System.Drawing.Color.Black;
+            this.btnok.ForeColor = System.Drawing.Color.White;
             this.btnok.IconChar = FontAwesome.Sharp.IconChar.CheckDouble;
-            this.btnok.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnok.IconColor = System.Drawing.Color.White;
             this.btnok.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnok.IconSize = 40;
             this.btnok.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnok.Location = new System.Drawing.Point(103, 90);
+            this.btnok.Location = new System.Drawing.Point(103, 80);
             this.btnok.Name = "btnok";
-            this.btnok.Size = new System.Drawing.Size(97, 42);
+            this.btnok.Size = new System.Drawing.Size(122, 42);
             this.btnok.TabIndex = 2;
             this.btnok.Text = "   Ok";
             this.btnok.UseVisualStyleBackColor = true;

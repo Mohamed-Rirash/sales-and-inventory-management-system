@@ -116,7 +116,7 @@
             this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Location = new System.Drawing.Point(36, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 43);
             this.label1.TabIndex = 0;
@@ -138,7 +138,7 @@
             this.btnadd.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnadd.IconSize = 35;
             this.btnadd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnadd.Location = new System.Drawing.Point(774, 6);
+            this.btnadd.Location = new System.Drawing.Point(817, 8);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(116, 37);
             this.btnadd.TabIndex = 4;

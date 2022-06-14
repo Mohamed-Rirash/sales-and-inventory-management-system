@@ -108,7 +108,7 @@
             this.label1.ForeColor = System.Drawing.Color.MintCream;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(3, -4);
+            this.label1.Location = new System.Drawing.Point(3, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 43);
             this.label1.TabIndex = 0;
@@ -122,7 +122,7 @@
             this.panel1.Controls.Add(this.btnaddn);
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 34);
+            this.panel1.Location = new System.Drawing.Point(0, 47);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 51);
             this.panel1.TabIndex = 9;
@@ -189,7 +189,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(984, 34);
+            this.panel2.Size = new System.Drawing.Size(984, 47);
             this.panel2.TabIndex = 11;
             // 
             // picClose
@@ -240,10 +240,10 @@
             this.dgvDebts.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDebts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDebts.EnableHeadersVisualStyles = false;
-            this.dgvDebts.Location = new System.Drawing.Point(0, 85);
+            this.dgvDebts.Location = new System.Drawing.Point(0, 98);
             this.dgvDebts.Name = "dgvDebts";
             this.dgvDebts.RowHeadersVisible = false;
-            this.dgvDebts.Size = new System.Drawing.Size(984, 476);
+            this.dgvDebts.Size = new System.Drawing.Size(984, 463);
             this.dgvDebts.TabIndex = 15;
             this.dgvDebts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDebts_CellClick);
             this.dgvDebts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDebts_CellContentClick_1);

@@ -116,15 +116,15 @@
             // 
             // iconPictureBox2
             // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(71)))), ((int)(((byte)(232)))));
+            this.iconPictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.iconPictureBox2.ForeColor = System.Drawing.Color.Red;
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
             this.iconPictureBox2.IconColor = System.Drawing.Color.Red;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 38;
-            this.iconPictureBox2.Location = new System.Drawing.Point(414, 3);
+            this.iconPictureBox2.IconSize = 50;
+            this.iconPictureBox2.Location = new System.Drawing.Point(410, 0);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(42, 38);
+            this.iconPictureBox2.Size = new System.Drawing.Size(53, 50);
             this.iconPictureBox2.TabIndex = 1;
             this.iconPictureBox2.TabStop = false;
             this.iconPictureBox2.Click += new System.EventHandler(this.iconPictureBox2_Click);

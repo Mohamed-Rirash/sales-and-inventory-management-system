@@ -1,0 +1,119 @@
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\SqlServerTypes\x64\msvcr120.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\SqlServerTypes\x86\msvcr120.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\sales and inventory management system.exe.config
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\sales and inventory management system.exe
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\sales and inventory management system.pdb
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\CircularProgressBar.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\FluentValidation.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\FontAwesome.Sharp.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\MetroFramework.Design.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\MetroFramework.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\MetroFramework.Fonts.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\Microsoft.ReportViewer.Common.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\Microsoft.ReportViewer.Design.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\Microsoft.ReportViewer.WebForms.DLL
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\Microsoft.ReportViewer.WinForms.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\Microsoft.SqlServer.Types.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\WinFormAnimation.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\EnvDTE.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\stdole.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\CircularProgressBar.xml
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\FluentValidation.xml
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales and inventory management system.csproj.AssemblyReference.cache
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales and inventory management system.csproj.SuggestedBindingRedirects.cache
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Adjustment.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Back_up.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Brand.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.BrandModule.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.CancelOrder.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Cashier.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Category.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.CategoryModule.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.ChangePassword.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.customerName.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Customers.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.CustumerModule.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.DailySale.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Dashboard.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Debtsmodule.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Depts.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Discount.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Loanrecept.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Login.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.LookUpProduct.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.mainform.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Notifications.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.personal_cart.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Product.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.ProductModule.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.ProductStockIn.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Properties.Resources.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Qty.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Recept.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Reports.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.ResetPassword.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.SalesReport.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Settle_Payment.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.splish.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.StockIn.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Store.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.UserAccount.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.UserHelp.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.UserProperties.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Vendor.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Vendormodule.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.viewpaiddebts.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales_and_inventory_management_system.Void.resources
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales and inventory management system.csproj.GenerateResource.cache
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales and inventory management system.csproj.CoreCompileInputs.cache
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales and inventory management system.csproj.CopyComplete
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales and inventory management system.exe
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\obj\Release\sales and inventory management system.pdb
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\System.ValueTuple.dll
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\System.ValueTuple.xml
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\Sales and IVentory mgnt system DB.ldf
+E:\projects\c# projects\au\finel pos project\working\sales-and-inventory-management-system\sales and inventory management system\bin\Release\Sales and IVentory mgnt system DB.mdf
