@@ -7,8 +7,11 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using DarrenLee.Media;
+using ZXing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace sales_and_inventory_management_system
 {
@@ -23,9 +26,10 @@ namespace sales_and_inventory_management_system
         string id;
         string price;
 
+        Camera capturedevice = new Camera();
         string stitle = "Point Of Sales";
         private UserPreferenceChangedEventHandler UserPreferenceChanged;
-
+       
         public Cashier()
         {
             InitializeComponent();
@@ -36,6 +40,7 @@ namespace sales_and_inventory_management_system
             SystemEvents.UserPreferenceChanged += UserPreferenceChanged;
             this.Disposed += new EventHandler(Form_Disposed);
             LoadTheme();
+            
         }
 
         #region theme 
@@ -472,6 +477,7 @@ namespace sales_and_inventory_management_system
 
         private void Cashier_FormClosing(object sender, FormClosingEventArgs e)
         {
+            capturedevice.Stop();
             Application.Exit();
         }
         public void Noti()
@@ -495,6 +501,33 @@ namespace sales_and_inventory_management_system
         private void Cashier_Load(object sender, EventArgs e)
         {
             Noti();
+            
+        }
+
+        private void CaptureDevice_OnFrameArrived(object source, FrameArrivedEventArgs e)
+        {
+            Bitmap bitmap = (Bitmap)e.GetFrame();
+            BarcodeReader barcodereader = new BarcodeReader();
+            var result = barcodereader.Decode(bitmap);
+            if (result != null)
+            {
+                txtBarcode.Invoke(new MethodInvoker(delegate () { txtBarcode.Text = result.ToString(); }));
+
+
+            }
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            
+                capturedevice.OnFrameArrived += CaptureDevice_OnFrameArrived;
+                capturedevice.Start();
+        }
+
+        private void panel4_DoubleClick(object sender, EventArgs e)
+        {
+            capturedevice.OnFrameArrived += CaptureDevice_OnFrameArrived;
+            capturedevice.Stop();
         }
     }
 }

@@ -65,6 +65,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.htmlToolTip1 = new MetroFramework.Drawing.Html.HtmlToolTip();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.btnbarcod = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelMenu.SuspendLayout();
@@ -160,7 +161,7 @@
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 822);
+            this.btnLogout.Location = new System.Drawing.Point(0, 874);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -257,7 +258,7 @@
             this.panelSubSetting.Controls.Add(this.btnStore);
             this.panelSubSetting.Controls.Add(this.btnUser);
             this.panelSubSetting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubSetting.Location = new System.Drawing.Point(0, 693);
+            this.panelSubSetting.Location = new System.Drawing.Point(0, 745);
             this.panelSubSetting.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelSubSetting.Name = "panelSubSetting";
             this.panelSubSetting.Size = new System.Drawing.Size(181, 129);
@@ -334,7 +335,7 @@
             this.btnSetting.ForeColor = System.Drawing.Color.White;
             this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
             this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.Location = new System.Drawing.Point(0, 648);
+            this.btnSetting.Location = new System.Drawing.Point(0, 700);
             this.btnSetting.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -353,7 +354,7 @@
             this.panelSubRecord.Controls.Add(this.btnPosRecord);
             this.panelSubRecord.Controls.Add(this.btnSaleHist);
             this.panelSubRecord.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubRecord.Location = new System.Drawing.Point(0, 563);
+            this.panelSubRecord.Location = new System.Drawing.Point(0, 615);
             this.panelSubRecord.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelSubRecord.Name = "panelSubRecord";
             this.panelSubRecord.Size = new System.Drawing.Size(181, 85);
@@ -407,7 +408,7 @@
             this.btnRecord.ForeColor = System.Drawing.Color.White;
             this.btnRecord.Image = ((System.Drawing.Image)(resources.GetObject("btnRecord.Image")));
             this.btnRecord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecord.Location = new System.Drawing.Point(0, 518);
+            this.btnRecord.Location = new System.Drawing.Point(0, 570);
             this.btnRecord.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRecord.Name = "btnRecord";
             this.btnRecord.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -428,7 +429,7 @@
             this.btnSupplier.ForeColor = System.Drawing.Color.White;
             this.btnSupplier.Image = ((System.Drawing.Image)(resources.GetObject("btnSupplier.Image")));
             this.btnSupplier.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSupplier.Location = new System.Drawing.Point(0, 473);
+            this.btnSupplier.Location = new System.Drawing.Point(0, 525);
             this.btnSupplier.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSupplier.Name = "btnSupplier";
             this.btnSupplier.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -447,7 +448,7 @@
             this.panelSubStock.Controls.Add(this.btnStockAdjustment);
             this.panelSubStock.Controls.Add(this.btnStockEntry);
             this.panelSubStock.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubStock.Location = new System.Drawing.Point(0, 388);
+            this.panelSubStock.Location = new System.Drawing.Point(0, 440);
             this.panelSubStock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelSubStock.Name = "panelSubStock";
             this.panelSubStock.Size = new System.Drawing.Size(181, 85);
@@ -503,7 +504,7 @@
             this.btnInStock.ForeColor = System.Drawing.Color.White;
             this.btnInStock.Image = ((System.Drawing.Image)(resources.GetObject("btnInStock.Image")));
             this.btnInStock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInStock.Location = new System.Drawing.Point(0, 343);
+            this.btnInStock.Location = new System.Drawing.Point(0, 395);
             this.btnInStock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInStock.Name = "btnInStock";
             this.btnInStock.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
@@ -520,6 +521,7 @@
             // panelSubProduct
             // 
             this.panelSubProduct.BackColor = System.Drawing.Color.SeaGreen;
+            this.panelSubProduct.Controls.Add(this.btnbarcod);
             this.panelSubProduct.Controls.Add(this.btnBrand);
             this.panelSubProduct.Controls.Add(this.btnCategory);
             this.panelSubProduct.Controls.Add(this.btnProductList);
@@ -527,7 +529,7 @@
             this.panelSubProduct.Location = new System.Drawing.Point(0, 212);
             this.panelSubProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelSubProduct.Name = "panelSubProduct";
-            this.panelSubProduct.Size = new System.Drawing.Size(181, 131);
+            this.panelSubProduct.Size = new System.Drawing.Size(181, 183);
             this.panelSubProduct.TabIndex = 0;
             // 
             // btnBrand
@@ -694,6 +696,27 @@
             this.panelMain.Size = new System.Drawing.Size(925, 572);
             this.panelMain.TabIndex = 5;
             // 
+            // btnbarcod
+            // 
+            this.btnbarcod.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnbarcod.FlatAppearance.BorderSize = 0;
+            this.btnbarcod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbarcod.ForeColor = System.Drawing.Color.White;
+            this.btnbarcod.Image = ((System.Drawing.Image)(resources.GetObject("btnbarcod.Image")));
+            this.btnbarcod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnbarcod.Location = new System.Drawing.Point(0, 135);
+            this.btnbarcod.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnbarcod.Name = "btnbarcod";
+            this.btnbarcod.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnbarcod.Size = new System.Drawing.Size(181, 45);
+            this.btnbarcod.TabIndex = 6;
+            this.btnbarcod.Tag = "Brand";
+            this.btnbarcod.Text = "Barcode ";
+            this.btnbarcod.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.htmlToolTip1.SetToolTip(this.btnbarcod, "Add New Brand");
+            this.btnbarcod.UseVisualStyleBackColor = true;
+            this.btnbarcod.Click += new System.EventHandler(this.btnbarcod_Click);
+            // 
             // mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -764,5 +787,6 @@
         private System.Windows.Forms.Panel active;
         public System.Windows.Forms.Button btnUser;
         public System.Windows.Forms.Button btnSetting;
+        private System.Windows.Forms.Button btnbarcod;
     }
 }

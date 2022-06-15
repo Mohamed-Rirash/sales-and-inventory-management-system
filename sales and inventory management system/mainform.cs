@@ -257,6 +257,7 @@ namespace sales_and_inventory_management_system
                 btnStore.Text = "";
                 btnUser.Text = "";
                 brnbackup.Text = "";
+                btnbarcod.Text = "";
                 btnProductList.ImageAlign = ContentAlignment.BottomCenter;
                 btnBrand.ImageAlign = ContentAlignment.BottomCenter;
                 btnCategory.ImageAlign = ContentAlignment.BottomCenter;
@@ -267,6 +268,7 @@ namespace sales_and_inventory_management_system
                 btnUser.ImageAlign = ContentAlignment.BottomCenter;
                 btnStore.ImageAlign = ContentAlignment.BottomCenter;
                 brnbackup.ImageAlign = ContentAlignment.BottomCenter;
+                btnbarcod.ImageAlign = ContentAlignment.BottomCenter;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
                     menuButton.Text = "";
@@ -291,6 +293,7 @@ namespace sales_and_inventory_management_system
                 btnStore.Text = "Store";
                 btnUser.Text = "Users";
                 brnbackup.Text = "Back up & Restore";
+                brnbackup.Text = "Barcode";
                 btnProductList.ImageAlign = ContentAlignment.MiddleLeft;
                 btnBrand.ImageAlign = ContentAlignment.MiddleLeft;
                 btnCategory.ImageAlign = ContentAlignment.MiddleLeft;
@@ -301,6 +304,7 @@ namespace sales_and_inventory_management_system
                 btnUser.ImageAlign = ContentAlignment.MiddleLeft;
                 btnStore.ImageAlign = ContentAlignment.MiddleLeft;
                 brnbackup.ImageAlign = ContentAlignment.MiddleLeft;
+                btnbarcod.ImageAlign = ContentAlignment.MiddleLeft;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
                     menuButton.Text = "   " + menuButton.Tag.ToString();
@@ -548,6 +552,12 @@ namespace sales_and_inventory_management_system
         private void mainform_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnbarcod_Click(object sender, EventArgs e)
+        {
+            openChildForm(new barcode());
+            hideSubmenu();
         }
     }
 }
