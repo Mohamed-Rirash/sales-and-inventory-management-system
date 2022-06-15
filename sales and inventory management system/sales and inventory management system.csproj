@@ -586,10 +586,10 @@
     <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Sales and IVentory mgnt system DB.ldf">
+    <Content Include="s.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Sales and IVentory mgnt system DB.mdf">
+    <Content Include="s.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="SqlServerTypes\readme.htm" />
