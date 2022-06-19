@@ -34,7 +34,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.picClose = new System.Windows.Forms.PictureBox();
-            this.dgvcart = new System.Windows.Forms.DataGridView();
+            this.dgvlcart = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,7 +49,7 @@
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvcart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvlcart)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -85,12 +85,12 @@
             this.picClose.TabStop = false;
             this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
-            // dgvcart
+            // dgvlcart
             // 
-            this.dgvcart.AllowUserToAddRows = false;
-            this.dgvcart.AllowUserToDeleteRows = false;
-            this.dgvcart.BackgroundColor = System.Drawing.Color.White;
-            this.dgvcart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvlcart.AllowUserToAddRows = false;
+            this.dgvlcart.AllowUserToDeleteRows = false;
+            this.dgvlcart.BackgroundColor = System.Drawing.Color.White;
+            this.dgvlcart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(71)))), ((int)(((byte)(232)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -98,10 +98,10 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(145)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvcart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvcart.ColumnHeadersHeight = 30;
-            this.dgvcart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvcart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvlcart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvlcart.ColumnHeadersHeight = 30;
+            this.dgvlcart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvlcart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
@@ -121,15 +121,15 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(228)))), ((int)(((byte)(249)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvcart.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvcart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvcart.EnableHeadersVisualStyles = false;
-            this.dgvcart.Location = new System.Drawing.Point(0, 49);
-            this.dgvcart.Name = "dgvcart";
-            this.dgvcart.ReadOnly = true;
-            this.dgvcart.RowHeadersVisible = false;
-            this.dgvcart.Size = new System.Drawing.Size(932, 448);
-            this.dgvcart.TabIndex = 15;
+            this.dgvlcart.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvlcart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvlcart.EnableHeadersVisualStyles = false;
+            this.dgvlcart.Location = new System.Drawing.Point(0, 49);
+            this.dgvlcart.Name = "dgvlcart";
+            this.dgvlcart.ReadOnly = true;
+            this.dgvlcart.RowHeadersVisible = false;
+            this.dgvlcart.Size = new System.Drawing.Size(932, 448);
+            this.dgvlcart.TabIndex = 15;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -226,7 +226,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(932, 497);
-            this.Controls.Add(this.dgvcart);
+            this.Controls.Add(this.dgvlcart);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -236,7 +236,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvcart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvlcart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -244,7 +244,7 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox picClose;
-        private System.Windows.Forms.DataGridView dgvcart;
+        private System.Windows.Forms.DataGridView dgvlcart;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;

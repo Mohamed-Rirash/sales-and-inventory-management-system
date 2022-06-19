@@ -241,7 +241,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(3, 12);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(84, 18);
+            this.lblTitle.Size = new System.Drawing.Size(82, 18);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Sold Items";
             this.lblTitle.Visible = false;

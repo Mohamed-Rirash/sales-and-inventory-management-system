@@ -28,7 +28,7 @@ namespace sales_and_inventory_management_system
             SystemEvents.UserPreferenceChanged += UserPreferenceChanged;
             this.Disposed += new EventHandler(Form_Disposed);
             LoadTheme();
-            cashier.LoadCart();    
+            Loadcart();
         }
         #region theme 
 
@@ -53,7 +53,7 @@ namespace sales_and_inventory_management_system
             var darkColor = ControlPaint.Dark(themeColor);
 
             panel1.BackColor = lightColor;
-            dgvcart.ColumnHeadersDefaultCellStyle.BackColor = darkColor;
+            dgvlcart.ColumnHeadersDefaultCellStyle.BackColor = darkColor;
 
 
             //Buttons
@@ -79,22 +79,31 @@ namespace sales_and_inventory_management_system
 
         public void Loadcart()
         {
-            
+            Depts db = new Depts();
             int i = 0;
-            dgvcart.Rows.Clear();
+            dgvlcart.Rows.Clear();
             cn.Open();
-            cm = new SqlCommand("SELECT transno,pcode,price,qty,disc,total,sdate,cashier FROM tbCart  WHERE transno@transno", cn);
+            int rowindex = db.dgvDebts.CurrentCell.RowIndex;
+            int columnindex = db.dgvDebts.CurrentCell.ColumnIndex;
            
-            dr = cm.ExecuteReader();
-            while (dr.Read())
-            {
-                i++;
-                dgvcart.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), dr[7].ToString(), dr[8].ToString(), dr[9].ToString(), dr[10].ToString());
-            }
-            dr.Close();
-            cn.Close();
-        }
+              
 
+                
+                    cm = new SqlCommand("SELECT c.transno,c.pcode,p.pdesc, c.price,c.qty,c.disc,c.total,c.sdate,c.cashier FROM tbCart AS c INNER JOIN tbProduct AS p On c.pcode=p.pcode WHERE transno ='" + db.dgvDebts.Rows[i].Cells[4].Value.ToString() + "'", cn);
+              
+                      dr = cm.ExecuteReader();
+                    
+                
+
+                while (dr.Read())
+                {
+                    i++;
+                    dgvlcart.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), dr[7].ToString(), dr[8].ToString());
+                }
+                dr.Close();
+                cn.Close();
+            
+        }
        
     }
 }

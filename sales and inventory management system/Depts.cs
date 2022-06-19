@@ -172,6 +172,11 @@ namespace sales_and_inventory_management_system
 
                 }
             }
+            else if (e.ColumnIndex == 9)
+            {
+                personal_cart personal = new personal_cart();
+                personal.Loadcart();
+            }
         }
 
         private void btnviewpaid_Click(object sender, EventArgs e)

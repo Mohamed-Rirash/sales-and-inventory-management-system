@@ -150,10 +150,12 @@ namespace sales_and_inventory_management_system
 
                 if ((double.Parse(txtChange.Text) < 0) || (txtCash.Text.Equals("")))
                 {
-                    MessageBox.Show("Insufficient amount, Please enter the corret amount! do you want TO Take as a Loan", "Warning", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
-                    
-                    Depts debt = new Depts();
-                    debt.ShowDialog();
+                   var result = MessageBox.Show("Insufficient amount, Please enter the corret amount! do you want TO Take as a Loan", "Warning", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                    if (result == DialogResult.Yes)
+                    {
+                        Depts debt = new Depts();
+                        debt.ShowDialog();
+                    }                  
 
                     for (int i = 0; i < cashier.dgvCash.Rows.Count; i++)
                     {
@@ -171,7 +173,7 @@ namespace sales_and_inventory_management_system
                     Loanrecept recept = new Loanrecept(cashier);
                     recept.LoadRecept(txtCash.Text, txtChange.Text);
                     recept.ShowDialog();
-
+////////////////////
                     MessageBox.Show("Payment successfully saved!", "Payment", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cashier.GetTranNo();
                     cashier.LoadCart();
