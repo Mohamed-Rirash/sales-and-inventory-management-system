@@ -52,7 +52,8 @@ namespace sales_and_inventory_management_system
             var lightColor = ControlPaint.Light(themeColor);
             var darkColor = ControlPaint.Dark(themeColor);
 
-            panel2.BackColor = themeColor;
+            panel1.BackColor = themeColor;
+            panel2.BackColor = lightColor;
             dgvCustomers.ColumnHeadersDefaultCellStyle.BackColor = darkColor;
 
 

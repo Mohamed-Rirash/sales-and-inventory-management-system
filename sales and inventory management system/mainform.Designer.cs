@@ -55,6 +55,7 @@
             this.btnStockEntry = new System.Windows.Forms.Button();
             this.btnInStock = new System.Windows.Forms.Button();
             this.panelSubProduct = new System.Windows.Forms.Panel();
+            this.btnbarcod = new System.Windows.Forms.Button();
             this.btnBrand = new System.Windows.Forms.Button();
             this.btnProductList = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
@@ -65,7 +66,6 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.htmlToolTip1 = new MetroFramework.Drawing.Html.HtmlToolTip();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.btnbarcod = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelMenu.SuspendLayout();
@@ -532,6 +532,27 @@
             this.panelSubProduct.Size = new System.Drawing.Size(181, 183);
             this.panelSubProduct.TabIndex = 0;
             // 
+            // btnbarcod
+            // 
+            this.btnbarcod.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnbarcod.FlatAppearance.BorderSize = 0;
+            this.btnbarcod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbarcod.ForeColor = System.Drawing.Color.White;
+            this.btnbarcod.Image = ((System.Drawing.Image)(resources.GetObject("btnbarcod.Image")));
+            this.btnbarcod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnbarcod.Location = new System.Drawing.Point(0, 135);
+            this.btnbarcod.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnbarcod.Name = "btnbarcod";
+            this.btnbarcod.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnbarcod.Size = new System.Drawing.Size(181, 45);
+            this.btnbarcod.TabIndex = 6;
+            this.btnbarcod.Tag = "Barcode";
+            this.btnbarcod.Text = "Barcode ";
+            this.btnbarcod.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.htmlToolTip1.SetToolTip(this.btnbarcod, "Add New Brand");
+            this.btnbarcod.UseVisualStyleBackColor = true;
+            this.btnbarcod.Click += new System.EventHandler(this.btnbarcod_Click);
+            // 
             // btnBrand
             // 
             this.btnBrand.Dock = System.Windows.Forms.DockStyle.Top;
@@ -695,27 +716,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(925, 572);
             this.panelMain.TabIndex = 5;
-            // 
-            // btnbarcod
-            // 
-            this.btnbarcod.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnbarcod.FlatAppearance.BorderSize = 0;
-            this.btnbarcod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnbarcod.ForeColor = System.Drawing.Color.White;
-            this.btnbarcod.Image = ((System.Drawing.Image)(resources.GetObject("btnbarcod.Image")));
-            this.btnbarcod.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbarcod.Location = new System.Drawing.Point(0, 135);
-            this.btnbarcod.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnbarcod.Name = "btnbarcod";
-            this.btnbarcod.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnbarcod.Size = new System.Drawing.Size(181, 45);
-            this.btnbarcod.TabIndex = 6;
-            this.btnbarcod.Tag = "Brand";
-            this.btnbarcod.Text = "Barcode ";
-            this.btnbarcod.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.htmlToolTip1.SetToolTip(this.btnbarcod, "Add New Brand");
-            this.btnbarcod.UseVisualStyleBackColor = true;
-            this.btnbarcod.Click += new System.EventHandler(this.btnbarcod_Click);
             // 
             // mainform
             // 

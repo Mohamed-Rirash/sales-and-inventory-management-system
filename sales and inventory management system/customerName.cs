@@ -28,8 +28,9 @@ namespace sales_and_inventory_management_system
             SystemEvents.UserPreferenceChanged += UserPreferenceChanged;
             this.Disposed += new EventHandler(Form_Disposed);
             LoadTheme();
-
+           
             cashier = cash;
+
         }
         #region theme 
 
@@ -107,6 +108,15 @@ namespace sales_and_inventory_management_system
                     cashier.lblcustomername.Text = textInfo.ToTitleCase(txtname.Text);
                     this.Dispose();
                 }
+            }
+        }
+
+        private void txtname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+              
+                btnok.PerformClick();
             }
         }
     }

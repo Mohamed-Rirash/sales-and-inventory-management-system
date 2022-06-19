@@ -72,7 +72,7 @@
             this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel.ForeColor = System.Drawing.Color.Silver;
             this.btnCancel.Location = new System.Drawing.Point(406, 297);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(94, 35);
@@ -200,10 +200,10 @@
             // btnnewcustomer
             // 
             this.btnnewcustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnnewcustomer.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnnewcustomer.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnnewcustomer.FlatAppearance.BorderSize = 0;
             this.btnnewcustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnnewcustomer.ForeColor = System.Drawing.Color.Black;
+            this.btnnewcustomer.ForeColor = System.Drawing.Color.Silver;
             this.btnnewcustomer.Location = new System.Drawing.Point(12, 297);
             this.btnnewcustomer.Name = "btnnewcustomer";
             this.btnnewcustomer.Size = new System.Drawing.Size(145, 35);

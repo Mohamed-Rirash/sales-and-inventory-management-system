@@ -48,6 +48,7 @@
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(344, 22);
             this.txtname.TabIndex = 0;
+            this.txtname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtname_KeyPress);
             // 
             // panel1
             // 

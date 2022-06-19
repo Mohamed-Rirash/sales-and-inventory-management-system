@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustumerModule));
-            this.txtPhone = new System.Windows.Forms.TextBox();
             this.cmbcustomertype = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -43,16 +42,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.Location = new System.Drawing.Point(175, 228);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(284, 26);
-            this.txtPhone.TabIndex = 51;
             // 
             // cmbcustomertype
             // 
@@ -194,6 +187,13 @@
             this.label2.TabIndex = 44;
             this.label2.Text = "Customer Name:";
             // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(175, 228);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(284, 26);
+            this.txtPhone.TabIndex = 51;
+            // 
             // CustumerModule
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -225,7 +225,6 @@
         }
 
         #endregion
-        public System.Windows.Forms.TextBox txtPhone;
         public System.Windows.Forms.ComboBox cmbcustomertype;
         public System.Windows.Forms.Button btnSave;
         public System.Windows.Forms.Button btnCancel;
@@ -239,5 +238,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox txtPhone;
     }
 }

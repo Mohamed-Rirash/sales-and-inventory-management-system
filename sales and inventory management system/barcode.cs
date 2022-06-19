@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Zen.Barcode;
-
 namespace sales_and_inventory_management_system
 {
     public partial class barcode : Form
@@ -21,12 +21,61 @@ namespace sales_and_inventory_management_system
         DBConnect dbcon = new DBConnect();
         SqlDataReader dr;
         string fname;
+        private UserPreferenceChangedEventHandler UserPreferenceChanged;
+
         public barcode()
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
             LoadProduct();
+            UserPreferenceChanged = new UserPreferenceChangedEventHandler(SystemEvents_UserPreferenceChanged);
+            SystemEvents.UserPreferenceChanged += UserPreferenceChanged;
+            this.Disposed += new EventHandler(Form_Disposed);
+            LoadTheme();
         }
+        #region theme 
+
+        //load theme after change
+        private void SystemEvents_UserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)
+        {
+            if (e.Category == UserPreferenceCategory.General || e.Category == UserPreferenceCategory.VisualStyle)
+            {
+                LoadTheme();
+            }
+        }
+        //system dispose
+        private void Form_Disposed(object sender, EventArgs e)
+        {
+            SystemEvents.UserPreferenceChanged -= UserPreferenceChanged;
+        }
+        // load theme
+        private void LoadTheme()
+        {
+            var themeColor = WinTheme.GetAccentColor();//Windows Accent Color
+            var lightColor = ControlPaint.Light(themeColor);
+            var darkColor = ControlPaint.Dark(themeColor);
+
+
+            panel1.BackColor = lightColor;
+            dgvbarcode.ColumnHeadersDefaultCellStyle.BackColor = darkColor;
+
+
+            //Buttons
+            foreach (Button button in this.Controls.OfType<Button>())
+            {
+                button.BackColor = themeColor;
+            }
+            foreach (Button button in this.Controls.OfType<Button>())
+            {
+                button.FlatAppearance.MouseOverBackColor = themeColor;
+                button.FlatAppearance.MouseDownBackColor = lightColor;
+            }
+        }
+
+
+
+#endregion
+
         public void LoadProduct()
         {
             int i = 0;
@@ -63,7 +112,7 @@ namespace sales_and_inventory_management_system
         {
             try
             {
-                SaveFileDialog savefile = new SaveFileDialog();
+                System.Windows.Forms.SaveFileDialog savefile = new System.Windows.Forms.SaveFileDialog();
                 savefile.Title = "Save Barcode image as";
                 savefile.FileName = fname;
                 savefile.Filter = "Image File (*.jpg, *.png)| *.jpg, *.png";

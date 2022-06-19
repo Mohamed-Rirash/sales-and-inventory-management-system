@@ -131,16 +131,6 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="label1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAPlJREFUSEvt
-        lkEKwjAQRbPRU7lyKV6roBfoNFfwEIJ6DqWUCuIVXOhUJjaWJs6kJhT0wacw/fOnDW2I+jMOAPaoe6B2
-        lBLAkMFFsaWUQPpCOWLRvlmJypTWE7qTbLBRRnciDzYAzKmxpkqiwQ3dxjw/vAXyFPBFm+bkjG5w9M3E
-        mLtE30yMuQ87TCIWPrMdJhELn9kOk4iFz2yHScTCZ466mZiG5ABcnoO1nlElEQDr11t/Vx+WfLOZ4g+/
-        QuO10zhEt+EnkmQALPFrPuH1iE+9oKobqd8JQIUyS1ZS1Y3U76Q5jbRBFVXdSP1OmqUDOKNq9lJL/D+C
-        Ug/nXKeAdPyGOQAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="picClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAdZJREFUSEvt

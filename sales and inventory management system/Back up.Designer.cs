@@ -43,14 +43,14 @@
             this.panel2.ForeColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1082, 34);
+            this.panel2.Size = new System.Drawing.Size(1082, 46);
             this.panel2.TabIndex = 20;
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Maroon;
-            this.panel1.Location = new System.Drawing.Point(374, 171);
+            this.panel1.Location = new System.Drawing.Point(353, 171);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(346, 2);
             this.panel1.TabIndex = 19;
@@ -61,7 +61,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(308, 152);
+            this.label1.Location = new System.Drawing.Point(287, 152);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 24);
             this.label1.TabIndex = 18;
@@ -70,7 +70,7 @@
             // btnbackup
             // 
             this.btnbackup.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnbackup.Location = new System.Drawing.Point(539, 228);
+            this.btnbackup.Location = new System.Drawing.Point(518, 228);
             this.btnbackup.Name = "btnbackup";
             this.btnbackup.Size = new System.Drawing.Size(140, 56);
             this.btnbackup.TabIndex = 16;
@@ -81,7 +81,7 @@
             // btnbrows
             // 
             this.btnbrows.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnbrows.Location = new System.Drawing.Point(348, 228);
+            this.btnbrows.Location = new System.Drawing.Point(327, 228);
             this.btnbrows.Name = "btnbrows";
             this.btnbrows.Size = new System.Drawing.Size(140, 56);
             this.btnbrows.TabIndex = 17;
@@ -94,7 +94,7 @@
             this.txtpath.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtpath.BackColor = System.Drawing.SystemColors.Control;
             this.txtpath.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtpath.Location = new System.Drawing.Point(374, 141);
+            this.txtpath.Location = new System.Drawing.Point(353, 141);
             this.txtpath.Multiline = true;
             this.txtpath.Name = "txtpath";
             this.txtpath.Size = new System.Drawing.Size(344, 32);

@@ -23,13 +23,6 @@ namespace sales_and_inventory_management_system
         public string _pass;
         private UserPreferenceChangedEventHandler UserPreferenceChanged;
 
-
-
-
-
-
-
-
         // childforms
         private Form activeForm = null;
         public void openChildForm(Form childForm)
@@ -293,7 +286,7 @@ namespace sales_and_inventory_management_system
                 btnStore.Text = "Store";
                 btnUser.Text = "Users";
                 brnbackup.Text = "Back up & Restore";
-                brnbackup.Text = "Barcode";
+                btnbarcod.Text = "Barcode";
                 btnProductList.ImageAlign = ContentAlignment.MiddleLeft;
                 btnBrand.ImageAlign = ContentAlignment.MiddleLeft;
                 btnCategory.ImageAlign = ContentAlignment.MiddleLeft;
