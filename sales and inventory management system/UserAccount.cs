@@ -35,6 +35,7 @@ namespace sales_and_inventory_management_system
             LoadTheme();
             main = mn;
             LoadUser();
+            LoadUserhelp();
         }
         #region theme 
 
@@ -60,7 +61,7 @@ namespace sales_and_inventory_management_system
 
             panel1.BackColor = lightColor;
             dgvUser.ColumnHeadersDefaultCellStyle.BackColor = darkColor;
-
+            dgvuserhelp.ColumnHeadersDefaultCellStyle.BackColor = darkColor;
 
             //Buttons
             foreach (Button button in this.Controls.OfType<Button>())
@@ -89,6 +90,21 @@ namespace sales_and_inventory_management_system
             {
                 i++;
                 dgvUser.Rows.Add(i, dr[0].ToString(), dr[3].ToString(), dr[4].ToString(), dr[2].ToString());
+            }
+            dr.Close();
+            cn.Close();
+        }
+        public void LoadUserhelp()
+        {
+            int i = 0;
+            dgvuserhelp.Rows.Clear();
+            cm = new SqlCommand("SELECT UserName, Full_Name, Combelain FROM Userhelp", cn);
+            cn.Open();
+            dr = cm.ExecuteReader();
+            while (dr.Read())
+            {
+                i++;
+                dgvuserhelp.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString());
             }
             dr.Close();
             cn.Close();

@@ -139,6 +139,7 @@ namespace sales_and_inventory_management_system
                     MessageBox.Show("Thanks for Your feedback and Wait Administrators answer!.", stitle, MessageBoxButtons.OK,MessageBoxIcon.Information);
                         
                         clear();
+                    Application.Exit();
 
                 }
             }

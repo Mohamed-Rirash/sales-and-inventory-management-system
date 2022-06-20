@@ -316,13 +316,13 @@ namespace sales_and_inventory_management_system
                 SqlDataAdapter da = new SqlDataAdapter();
                 cn.Open();
                 da.SelectCommand = new SqlCommand(sql, cn);
-                da.Fill(ds.Tables["dtdebts"]);
+                da.Fill(ds.Tables["Depts"]);
                 cn.Close();
 
                // ReportParameter pDate = new ReportParameter("pDate",);
 
                // reportViewer1.LocalReport.SetParameters(pDate);
-                rptDS = new ReportDataSource("DataSet1", ds.Tables["dtSoldItems"]);
+                rptDS = new ReportDataSource("DataSet1", ds.Tables["Depts"]);
                 reportViewer1.LocalReport.DataSources.Add(rptDS);
                 reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
                 reportViewer1.ZoomMode = ZoomMode.Percent;
