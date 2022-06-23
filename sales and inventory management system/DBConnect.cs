@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace sales_and_inventory_management_system
         private string con;
         public string myConnection()
         {
+            
             con = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Sales and IVentory mgnt system DB;Integrated Security=True";
             return con;
 

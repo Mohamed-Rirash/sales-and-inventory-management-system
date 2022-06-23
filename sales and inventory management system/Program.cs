@@ -16,7 +16,7 @@ namespace sales_and_inventory_management_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainform());
+            Application.Run(new Login());
         }
     }
 }
